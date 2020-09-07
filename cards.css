@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: slategray;
+}
+
+.card-down{
+    position: relative;
+    float: left;
+    max-width: 230px;
+    height: 170px;
+    background: #ffffff;
+    margin: 30px 30px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.card-down:hover{
+    height: auto;
+}
+
+.card-down .img-down{
+    position: relative;
+    width: 190px;
+    height: 190px;
+    top: -40px;
+    left: 20px;
+}
+
+.card-down .img-down img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.card-down .content-down{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #353535;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.card-down:hover .content-down{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.2s;
+}
+
+.card-down .content-down .btn-down{
+    background: none;
+    color: rgb(0, 79, 124);
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.card-down .content-down .btn-down:hover{
+    background: rgb(0, 79, 124);
+    color: #ffffff
+}
+
+@media screen and (max-width: 415px){
+    .card-down{
+        height: auto;
+    }
+
+    .card-down .content-down{
+        visibility: visible;
+        margin-top: -40px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .card-down{
+        height: auto;
+        width: 210px;
+    }
+
+    .card-down .img-down{
+        width: 170px;
+    }
+
+    .card-down .content-down{
+        visibility: visible;
+        margin-top: -40px;
+        opacity: 1;
+    }
+}
