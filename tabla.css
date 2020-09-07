@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+.tabla {
+    width: 80%;            
+    text-align: center;
+    margin: 20px auto;
+    font-family: "Playfair Display", serif;
+    border-collapse: collapse;
+}
+
+.tabla td, .tabla th {    
+    padding: 15px;        
+}
+
+.tabla tbody > tr {    
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.tabla tbody > tr:hover{
+    background: #f0f0f0;
+    color: #3b3732;    
+}
+
+/* ESTILO OSCURO */
+.tabla-outline-dark thead  {
+    background: #312e2a;
+    color: #ffff;
+}
+
+.tabla-dark thead {
+    color: #3b3732;
+    border-top: 2px solid #3b3732;
+    border-bottom: 2px solid #3b3732;
+}
+
+.tabla-dark tbody > tr{
+    background: #3b3732;
+    color: white;
+}
+
+/* ESTILO ROJO */
+.tabla-outline-red thead  {
+    background: #a50a35;
+    color: #ffff;
+}
+
+.tabla-red thead {
+    color: #a50a35;
+    border-top: 2px solid #a50a35;
+    border-bottom: 2px solid #a50a35;
+}
+
+.tabla-red tbody > tr{
+    background: #a50a35;
+    color: white;
+}
+
+/* ESTILO AZUL */
+.tabla-outline-darkblue thead {
+    background: #0b499b;
+    color: #ffff;
+}
+
+.tabla-darkblue thead {
+    color: darkblue;
+    border-top: 2px solid darkblue;
+    border-bottom: 2px solid darkblue;
+}
+
+.tabla-darkblue tbody > tr{
+    background: darkblue;
+    color: white;
+}
+
+/* ESTILO NARANJA */
+.tabla-outline-oranje thead {
+    background: #f0740d;
+    color: #ffff;
+}
+
+.tabla-oranje thead {
+    color: #f0740d;
+    border-top: 2px solid #f0740d;
+    border-bottom: 2px solid #f0740d;
+}
+
+.tabla-oranje tbody > tr{
+    background: #f0740d;
+    color: white;
+}
+
+/* ESTILO MORADO */
+.tabla-outline-purple thead {
+    background: #9129af;
+    color: #ffff;
+}
+
+.tabla-purple thead {
+    color: #9129af;
+    border-top: 2px solid #9129af;
+    border-bottom: 2px solid #9129af;
+}
+
+.tabla-purple tbody > tr{
+    background: #9129af;
+    color: white;
+}
+
+/* ESTILO VERDE */
+.tabla-outline-green thead {
+    background: #24bb17;
+    color: #ffff;
+}
+
+.tabla-green thead {
+    color: #24bb17;
+    border-top: 2px solid #24bb17;
+    border-bottom: 2px solid #24bb17;
+}
+
+.tabla-green tbody > tr{
+    background: #24bb17;
+    color: white;
+}
+
+/* ESTILO AMARILLO */
+.tabla-outline-yellow thead {
+    background: #d3e60d;
+    color: #ffff;
+}
+
+.tabla-yellow thead {
+    color: #d3e60d;
+    border-top: 2px solid #d3e60d;
+    border-bottom: 2px solid #d3e60d;
+}
+
+.tabla-yellow tbody > tr{
+    background: #d3e60d;
+    color: white;
+}
+
+/* ESTILO ROSA */
+.tabla-outline-pink thead {
+    background: #fd01dd;
+    color: #ffff;
+}
+
+.tabla-pink thead {
+    color: #fd01dd;
+    border-top: 2px solid #fd01dd;
+    border-bottom: 2px solid #fd01dd;
+}
+
+.tabla-pink tbody > tr{
+    background: #fd01dd;
+    color: white;
+}
+
+/* BORDES DE TABLA */
+.tabla-border tbody > tr > td, .tabla-border tbody > tr > th{
+    border: 2px solid #f0f0f0;
+}
+
+
+
