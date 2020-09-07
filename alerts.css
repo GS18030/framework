@@ -1,0 +1,209 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alert{
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px #c2c2c23b;
+    overflow:hidden;
+    margin: 10px;
+    width: 450px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.alert-sub{
+    box-shadow: 5px 5px 5px #c2c2c23b;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/*----------------------ALERT SUCCESS -----------------------*/
+
+                    /*----------------------ALERT  -----------------------*/
+.alert .alert-icon-success{
+    float: left;
+    background: linear-gradient(#5fc49d, #09cc80);
+    width: 80px;
+    height: 100%;
+}
+
+.alert .alert-icon-success .fa-thumbs-up{
+    color: #94dfad;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.alert .alert-text-success{
+    float: left;
+    padding: 15px 15px;
+    color: #09cc80;
+}
+                   /*----------------------ALERT SUB -----------------------*/
+.success{
+    background: linear-gradient(45deg, #2cd0ae, #09cc80);
+}
+
+.error{
+    background: linear-gradient(45deg, #fb333e, #c8048c);
+}
+
+.war{
+    background: linear-gradient(45deg, #fcce00, #ff970f);
+}
+
+.info{
+    background: linear-gradient(45deg, #03639e, #133d58);
+}
+
+
+.alert-sub .emoji-alert{
+    float: left;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 7px 10px;
+}
+.alert-sub-msg{
+    float: left;
+    color: white;
+    font-size: 16px;
+    padding-top: 12px;
+}
+.alert-sub-close{
+    background: none;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    float: right;
+    padding: 10px;
+}
+
+.alert-sub-close:hover{
+    color: rgb(43, 43, 43);
+}
+
+
+/*----------------------ALERT ERROR -----------------------*/
+.alert .alert-icon-error{
+    float: left;
+    background: linear-gradient(#d88183, #bd4b52);
+    width: 80px;
+    height: 100%;
+}
+
+.alert .alert-icon-error .fa-thumbs-down{
+    color: rgb(209, 142, 146);
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.alert .alert-text-error{
+    float: left;
+    padding: 15px 15px;
+    color: #bd4b52;
+}
+/*----------------------ALERT WARNING -----------------------*/
+.alert .alert-icon-war{
+    float: left;
+    background: linear-gradient(#fcd876, #fdbf14);
+    width: 80px;
+    height: 100%;
+}
+
+.alert .alert-icon-war .fa-exclamation-triangle{
+    color: #f8e5af;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 18px;
+}
+
+.alert .alert-text-war{
+    float: left;
+    padding: 15px 15px;
+    color: #fdbf14;
+}
+/*----------------------ALERT INFORMATION -----------------------*/
+.alert .alert-icon-info{
+    float: left;
+    background: linear-gradient(#316686, #133d58);
+    width: 80px;
+    height: 100%;
+}
+
+.alert .alert-icon-info .fa-info-circle{
+    color: #5785a1;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.alert .alert-text-info{
+    float: left;
+    padding: 15px 15px;
+    color: #133d58;
+}
+/*----------------------ALERT GENERAL -----------------------*/
+
+.alert-close{
+    float: right;
+    width: 40px;
+    height: 100%;
+}
+
+.alert-close .fa-times-circle{
+    font-size: 25px;
+    padding-top: 25px;
+    padding-left: 6px;
+    color: rgb(100, 100, 100);
+}
+
+.alert-close:hover{
+    background: rgb(241, 241, 241);
+    cursor: pointer;
+}
+
+.alert-msg{
+    font-size: 14px;
+    color: rgb(173, 173, 173);
+}
+
+
+@media screen and (max-width: 415px){
+    .alert{
+        width: 280px;
+    }
+    .sm-success{
+        border-left: solid 12px #50ba6a;
+    }
+    .sm-error{
+        border-left: solid 12px #bd4b52;
+    }
+    .sm-war{
+        border-left: solid 12px #fdbf14;
+    }
+    .sm-info{
+        border-left: solid 12px #133d58;
+    }
+    .alert-icon-success{
+        display: none;
+    }
+    .alert-icon-error{
+        display: none;
+    }
+    .alert-icon-war{
+        display: none;
+    }
+    .alert-icon-info{
+        display: none;
+    }
+
+}
+
+
