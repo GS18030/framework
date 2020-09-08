@@ -13,14 +13,70 @@ body{
 
 }
 
+/**---------------- CARD DEFAULT ------------*/
+
+.card-default{
+    position: relative;
+    /*float: left*/;
+    max-width: 230px;
+    height: auto;
+    background: #ffffff;
+    margin: 30px 30px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+
+.card-default .img-default{
+    position: relative;
+    width: 190px;
+    height: 190px;
+    top: -40px;
+    left: 20px;
+}
+
+.card-default .img-default img{
+    max-width: 100%;
+    border-radius: 4px;
+    ;
+}
+
+.card-default .content-default{
+    position: relative;
+    margin-top: -40px;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+
+.card-default .content-default .btn-default{
+    background: none;
+    color: rgb(0, 79, 124);
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.card-default .content-default .btn-default:hover{
+    background: rgb(0, 79, 124);
+    color: #ffffff
+}
+
+
 
 /**---------------- CARD DOWN ------------*/
 
 .card-down{
     position: relative;
-    float: left;
+    /*float: left;*/
     max-width: 230px;
-    height: 170px;
+    height: auto;
     background: #ffffff;
     margin: 30px 30px;
     padding: 20px 15px;
@@ -41,6 +97,7 @@ body{
     height: 190px;
     top: -40px;
     left: 20px;
+    text-align: center;
 }
 
 .card-down .img-down img{
@@ -61,7 +118,7 @@ body{
 .card-down:hover .content-down{
     visibility: visible;
     opacity: 1;
-    margin-top: -40px;
+    margin-top: 0;
     transition-delay: 0.3s;
 }
 
@@ -87,11 +144,11 @@ body{
     max-width: 1080px;
     height: 350px;
     max-height: auto;
-    float: left; 
+    /*float: left;*/ 
     background:#ffffff;
     display: flex;
     align-items: center;
-    margin: 5%;
+    margin: 30px 30px;
     border-radius: 10px;
 }
 
@@ -129,6 +186,63 @@ body{
 
 .card-blog .link-content:hover{
     background: linear-gradient(to right, #e7b21f 0%, #E76E1F 100%);
+}
+
+/**---------------- CARD POST ------------*/
+
+.card-face{
+    position: relative;
+    /*float: left;*/
+    width: 300px;
+    height: 400px;
+    margin: 30px 30px;
+    box-shadow: 8px 8px 48px 1px rgba(0,0,0,0.5);
+}
+
+.card-face .face{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-face .face.face1{
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.card-face .face.face2{
+    background: linear-gradient(to right, #002cbe, #33457e );
+    transition: 0.5s;
+}
+
+.card-face:hover .face.face2{
+    height: 60px;
+}
+
+.card-face .face.face2:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,.1)
+}
+
+.card-face .face.face h1{
+    color: #fff;
+    font-size: 80px;
+    transition: 0.5s;
+}
+
+.card-face:hover .face.face2 h1{
+    font-size: 25px;
 }
 
 
@@ -205,6 +319,21 @@ body{
     }
 
     .card-down .content-down{
+        visibility: visible;
+        margin-top: -40px;
+        opacity: 1;
+    }
+
+    .card-default{  /*Aqui va el responsive para el default unido*/
+        height: auto;
+        width: 210px;
+    }
+
+    .card-default .img-default{
+        width: 170px;
+    }
+
+    .card-default .content-default{
         visibility: visible;
         margin-top: -40px;
         opacity: 1;
