@@ -1458,13 +1458,14 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 /* BOTON AZUL */
 .btn-darkblue {
   color: white;
-  background: #0b499b;
+  background: rgb(20,33,61);
+  background: linear-gradient(90deg, rgba(20,33,61,1) 0%, rgba(61,100,185,1) 100%);
 }
 
 /* BOTON ROJO */
 .btn-red {
   color: white;
-  background: #a50a35;
+  background: #d30808;
 }
 
 /* BOTON AMARILLO */
@@ -1476,7 +1477,8 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 /* BOTON NARANJA */
 .btn-orange {
   color: white;
-  background: #f0740d;
+  background: rgb(234,88,15);
+  background: linear-gradient(90deg, rgba(234,88,15,1) 0%, rgba(255,85,0,1) 48%, rgba(252,117,51,1) 100%);
 }
 
 /* BOTON VERDE */
@@ -1488,7 +1490,8 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 /* BOTON OSCURO */
 .btn-dark {
   color: white;
-  background: #312e2a;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(42,43,43,1) 100%);
 }
 
 /* BOTON MORADO */
@@ -1505,71 +1508,8 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BOTONES REDONDEADOS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .btn-radius {
-    border-radius: 5px;
+    border-radius: 8px;
   }
-
-/* BOTON BLANCO */
-.btn-radius-normal {
-  background: #f8f9fa;
-  border-radius: 5px;
-}
-
-/* BOTON AZUL */
-.btn-radius-darkblue {
-  background: #0b499b;
-  color: #fff;
-  border-radius: 5px;
-}
-
-/* BOTON ROJO */
-.btn-radius-red {
-  background: #a50a35;
-  color: #fff;
-  border-radius: 5px;
-}
-
-/* BOTON AMARILLO */
-.btn-radius-yellow {
-  background: #d3e60d;
-  color: #fff;
-  border-radius: 5px;
-}
-
-/* BOTON AMARILLO */
-.btn-radius-orange {
-  background: #f0740d;
-  color: #fff;
-  border-radius: 5px;
-}
-
-/* BOTON VERDE */
-.btn-radius-green {
-  background: #24bb17;
-  color: #fff;
-  border-radius: 5px;
-}
-
-/* BOTON OSCURO */
-.btn-radius-dark {
-  background: #312e2a;
-  color: #fff;
-  border-radius: 5px;
-}
-
-/* BOTON MORADO */
-.btn-radius-purple {
-  background: #9129af;
-  color: #fff;
-  border-radius: 5px;
-}
-
-/* BOTON ROSA */
-.btn-radius-pink {
-  background: #fd01dd;
-  color: #fff;
-  border-radius: 5px;
-}
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BOTONES OUTLINE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* BOTON BLANCO */
@@ -1592,8 +1532,8 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 .btn-outline-red {
   background:rgba(255,255,255, 0.0);
   border-radius: 5px;
-  border: 2px solid #a50a35;
-  color: #a50a35;
+  border: 2px solid #d30808;
+  color: #d30808;
 }
 
 /* BOTON  AMARILLO*/
@@ -1658,7 +1598,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 
 /* BOTON ROJO */
 .btn-red:hover {
-  background: #800829;
+  background: #d30808;
 }
 
 /* BOTON AMARILLO */
@@ -1745,44 +1685,6 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 .btn-outline-purple:hover {
   background: #9129af;
   color: white;
-}
-
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HOVER BOTONES REDONDEADOS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-.btn-radius-normal:hover {
-  background: #f0f0f0;
-}
-
-.btn-radius-darkblue:hover {
-  background: #083c80;
-}
-
-.btn-radius-red:hover {
-  background: #800829;
-}
-
-.btn-radius-yellow:hover {
-  background: #bece11;
-}
-
-.btn-radius-orange:hover {
-  background: #e06d0d;
-}
-
-.btn-radius-green:hover {
-  background: #20aa14;
-}
-
-.btn-radius-dark:hover {
-  background: #3b3732;
-}
-
-.btn-radius-purple:hover {
-  background:#7c1f99;
-}
-
-.btn-radius-pink:hover {
-  background:#ec07ce;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> TAMAÑO DE BOTONES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -2341,7 +2243,6 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 .navbar{
     height: 60px;
     width: 90%;
-    background: #000;
     margin: 5px auto;
     border-radius: 40px;
 }
@@ -2577,22 +2478,22 @@ img{
 
 @media screen and (max-width: 800px){
  
-    textos h1{
+    .textos h1{
         font-size: 70px;
     }
 
-    textos h2{
+    .textos h2{
         font-size: 25px;
     }
 }
 
 @media screen and (max-width: 700px){
   
-    textos h1{
+    .textos h1{
         font-size: 40px;
     }
 
-    textos h2{
+    .textos h2{
         font-size: 15px;
     }
 }
@@ -2608,11 +2509,11 @@ img{
         text-align: center;
     }
 
-    textos h1{
+    .textos h1{
         font-size: 60px;
     }
 
-    textos h2{
+    .textos h2{
         font-size: 25px;
     }
 }
@@ -2633,13 +2534,13 @@ img{
         text-align: center;
     }
 
-    textos h1{
+    .textos h1{
         font-size: 20px;
     }
-    textos a{
+    .textos a{
         width: 120px;
     }
-    textos h2{
+    .textos h2{
         font-size: 15px;
     }
 }
@@ -2648,3 +2549,102 @@ img{
     max-width: 50%;
     max-height: 50%;
 }
+
+form-items {
+    margin: 20px 0;
+    padding: 0 70px;    
+}
+
+label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+input, textarea {
+    padding: 10px 12px;
+    border: 1.5px solid #cccccc;
+    /* border: 2px solid transparent;     */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {       
+    border-color: #80bdff; 
+    box-shadow: .7px .7px 11px rgba(52,168,206,.4);    
+    transition: box-shadow 0.25s;
+}
+
+/* Tamaños de imputs */
+.form-item-sm {
+    padding: 7px 12px;
+}
+.form-item-lg {
+    padding: 16px 12px;
+}
+
+.form-item-block {
+    width: 100%;
+}
+
+/* Titulo del formulario */
+.form-title {
+    text-align: center;   
+    padding: 10px 0;
+}
+
+/* TIPOS DE BORDES */
+.border {
+    border: 2px solid #dee2e6;
+  }
+
+  .border-top {
+    border-top: 2px solid #dee2e6;
+  }
+
+  .border-bottom {
+    border-bottom: 2px solid #dee2e6;
+  }
+
+  .border-left {
+    border-left: 2px solid #dee2e6;
+  }
+
+  .border-right {
+    border-right: 2px solid #dee2e6;
+  }
+
+
+  /* COLORES DE BORDES */
+  .border-persimmon{
+    border-color: #EA580F;
+  }
+
+  .border-oxfordblue {
+    border-color: #14213D;
+  }
+  .border-black{
+    border-color: #000000;
+  }
+  .border-platinum {
+    border-color: #E5E5E5;
+  }
+
+  .border-rhythm {
+    border-color: #7E809F;
+  }
+  .border-white {
+    border-color: #ffffff;
+  }
+
+  /* FORMAS DE COLORES */
+  .border-circle {
+      border-radius: 50%;
+  }
+
+  .border-rounded {
+      border-radius: 30%;
+  }
+
+
+  
