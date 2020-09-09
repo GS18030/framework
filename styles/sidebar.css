@@ -1,0 +1,84 @@
+
+/*/--------------------------------------------*/
+
+.sidebar{
+    position: fixed;
+    width: 265px;
+    height: 100%;
+    left: 0;
+    background: #000000;
+    transition: left 0.4s;
+}
+
+.sidebar .text{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+  } 
+
+.sidebar .sidebar-ul{
+    background: #141414;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar .sidebar-ul li{
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar .sidebar-ul li a{
+    position: relative;
+    color: #e6e6e6;
+    text-decoration: none;
+    font-size-adjust: 18px;
+    font-size: 16px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+.sidebar .sidebar-ul li a:hover{
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+
+.sidebar .sidebar-ul ul{
+    position: static;
+    display: none;
+}
+
+/*Js cambio de clases para mostrar los submenu
+.sidebar .sidebar-ul .layouts-show.show{
+    display: block;
+}
+.sidebar .sidebar-ul .tipog-show.show{
+    display: block;
+}
+.sidebar .sidebar-ul .utilidades-show.show{
+    display: block;
+}
+.sidebar .sidebar-ul .components-show.show{
+    display: block;
+}*/
+
+.sidebar .sidebar-ul ul li{
+    line-height: 35px;
+    border-bottom: none;  
+}
+
+.sidebar .sidebar-ul ul li a{
+    font-size: 14px; 
+    color: #e6e6e6;
+    padding-left: 60px;
+}
+
+

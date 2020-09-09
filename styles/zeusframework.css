@@ -28,6 +28,9 @@ html {
   font-family: 'Raleway', Helvetica,serif;
   font-variation-settings: 'wght' 500;
 }
+.w-20 {
+    width: 20%;
+}
 
 .w-25 {
     width: 25%;
@@ -2226,6 +2229,7 @@ label #cancel
     align-items: center;
     justify-content: space-around;
     margin: auto;
+    padding: 3px;
 }
 
 img{
@@ -2481,7 +2485,7 @@ input:focus, textarea:focus {
   
   /**22222222222222222222222222222222222*/
   .alert{
-    background: rgb(14, 14, 14);
+    background: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px #c2c2c23b;
     overflow:hidden;
     margin: 10px;
@@ -2683,3 +2687,14 @@ input:focus, textarea:focus {
     }
 
 }
+
+pre{
+
+    margin: 36px 0;
+}
+
+.oculto{
+
+    display: none;
+}
+
