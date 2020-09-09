@@ -56,7 +56,7 @@
     display: none;
 }
 
-/*Js cambio de clases para mostrar los submenu
+/*Js cambio de clases para mostrar los submenu*/
 .sidebar .sidebar-ul .layouts-show.show{
     display: block;
 }
@@ -68,7 +68,7 @@
 }
 .sidebar .sidebar-ul .components-show.show{
     display: block;
-}*/
+}
 
 .sidebar .sidebar-ul ul li{
     line-height: 35px;
