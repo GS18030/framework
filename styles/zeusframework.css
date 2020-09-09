@@ -18,13 +18,13 @@ FFFFFF  - WHITE
 /* ESTILOS GENERALES */
 
 *, *::before, *::after {
-  /*  box-sizing: inherit;*/
+    /*box-sizing: inherit;*/
     margin: 0;
     padding: 0;
 }
 
 html {
-/*box-sizing: border-box;*/
+  /*  box-sizing: border-box;*/
   font-family: 'Raleway', Helvetica,serif;
   font-variation-settings: 'wght' 500;
 }
@@ -1176,7 +1176,7 @@ html {
 @supports (font-variation-settings: 'wdth' 200) {
     @font-face {
       font-family: 'Recursive';
-      src: url('./fuentes/Recursive.ttf');
+      src: url('../fuentes/Recursive.ttf');
       font-weight: normal;
       font-style: normal;
     }}
@@ -1184,7 +1184,7 @@ html {
     @supports (font-variation-settings: 'wdth' 200) {
       @font-face {
         font-family: 'Raleway';
-        src: url('./fuentes/Raleway.ttf');
+        src: url('../fuentes/Raleway.ttf');
         font-weight: normal;
         font-style: normal;
       }}
@@ -1192,7 +1192,7 @@ html {
       @supports (font-variation-settings: 'wdth' 200) {
         @font-face {
           font-family: 'JosefinSans';
-          src: url('./fuentes/JosefinSans-SemiBold.ttf');
+          src: url('../fuentes/JosefinSans-SemiBold.ttf');
           font-weight: normal;
           font-style: normal;
         }}
@@ -1205,10 +1205,11 @@ body{
 h1, h2, h3, h4, h5, h6 {
 
   font-family: 'Recursive', Helvetica,serif;
-  font-variation-settings: 'wght' 350;
+  font-variation-settings: 'wght' 400;
   letter-spacing: 2px;
 
 }
+
 /*Backgruod Colors*/
 .black{
     background: rgb(0,0,0);
@@ -1223,6 +1224,34 @@ background: linear-gradient(90deg, rgba(20,33,61,1) 0%, rgba(61,100,185,1) 100%)
 .persimmon{
     background: rgb(234,88,15);
     background: linear-gradient(90deg, rgba(234,88,15,1) 0%, rgba(255,85,0,1) 48%, rgba(252,117,51,1) 100%);
+}
+
+.red {
+    background: #a50a35;
+}
+
+.darkblue {
+    background: #0b499b;
+}
+
+.yellow {
+    background: #d3e60d;
+}
+
+.green {
+    background: #24bb17;
+}
+
+.purple {
+    background: #9129af;    
+}
+
+.pink {
+    background: #fd01dd;
+}
+
+.orange {
+    background: #f0740d;
 }
 
 .rhythm{
@@ -1243,7 +1272,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 }
 .header-font{
     font-family: 'Recursive', Helvetica,serif;
-    font-variation-settings: 'wght' 350;
+    font-variation-settings: 'wght' 400;
     letter-spacing: 2px;
 }
 .content-font{
@@ -1308,6 +1337,10 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 }
 .txt-grey{
   color:#6c757d !important;
+}
+.txt-black{
+
+    color: black !important;
 }
 
 /*--------------TAMAÑOS DE TEXTO-----------------*/
@@ -1701,210 +1734,8 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
     padding: 16px 36px;
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-.alert{
-    background: rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px #c2c2c23b;
-    overflow:hidden;
-    margin: 10px;
-    width: 450px;
-    height: 80px;
-    border-radius: 10px;
-    font-size: 22px;
-}
 
-.alert-sub{
-    box-shadow: 5px 5px 5px #c2c2c23b;
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-/*----------------------ALERT SUCCESS -----------------------*/
-
-                    /*----------------------ALERT  -----------------------*/
-.alert .alert-icon-success{
-    float: left;
-    background: linear-gradient(#5fc49d, #09cc80);
-    width: 80px;
-    height: 100%;
-}
-
-.alert .alert-icon-success .fa-thumbs-up{
-    color: #94dfad;
-    font-size: 40px;
-    padding-top: 15px;
-    padding-left: 20px;
-}
-
-.alert .alert-text-success{
-    float: left;
-    padding: 15px 15px;
-    color: #09cc80;
-}
-                   /*----------------------ALERT SUB -----------------------*/
-.success{
-    background: linear-gradient(45deg, #2cd0ae, #09cc80);
-}
-
-.error{
-    background: linear-gradient(45deg, #fb333e, #c8048c);
-}
-
-.war{
-    background: linear-gradient(45deg, #fcce00, #ff970f);
-}
-
-.info{
-    background: linear-gradient(45deg, #03639e, #133d58);
-}
-
-
-.alert-sub .emoji-alert{
-    float: left;
-    font-size: 25px;
-    color: #ffffff;
-    padding: 7px 10px;
-}
-.alert-sub-msg{
-    float: left;
-    color: white;
-    font-size: 16px;
-    padding-top: 12px;
-}
-.alert-sub-close{
-    background: none;
-    border: none;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    font-size: 18px;
-    float: right;
-    padding: 10px;
-}
-
-.alert-sub-close:hover{
-    color: rgb(43, 43, 43);
-}
-
-
-/*----------------------ALERT ERROR -----------------------*/
-.alert .alert-icon-error{
-    float: left;
-    background: linear-gradient(#d88183, #bd4b52);
-    width: 80px;
-    height: 100%;
-}
-
-.alert .alert-icon-error .fa-thumbs-down{
-    color: rgb(209, 142, 146);
-    font-size: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.alert .alert-text-error{
-    float: left;
-    padding: 15px 15px;
-    color: #bd4b52;
-}
-/*----------------------ALERT WARNING -----------------------*/
-.alert .alert-icon-war{
-    float: left;
-    background: linear-gradient(#fcd876, #fdbf14);
-    width: 80px;
-    height: 100%;
-}
-
-.alert .alert-icon-war .fa-exclamation-triangle{
-    color: #f8e5af;
-    font-size: 40px;
-    padding-top: 20px;
-    padding-left: 18px;
-}
-
-.alert .alert-text-war{
-    float: left;
-    padding: 15px 15px;
-    color: #fdbf14;
-}
-/*----------------------ALERT INFORMATION -----------------------*/
-.alert .alert-icon-info{
-    float: left;
-    background: linear-gradient(#316686, #133d58);
-    width: 80px;
-    height: 100%;
-}
-
-.alert .alert-icon-info .fa-info-circle{
-    color: #5785a1;
-    font-size: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.alert .alert-text-info{
-    float: left;
-    padding: 15px 15px;
-    color: #133d58;
-}
-/*----------------------ALERT GENERAL -----------------------*/
-
-.alert-close{
-    float: right;
-    width: 40px;
-    height: 100%;
-}
-
-.alert-close .fa-times-circle{
-    font-size: 25px;
-    padding-top: 25px;
-    padding-left: 6px;
-    color: rgb(100, 100, 100);
-}
-
-.alert-close:hover{
-    background: rgb(241, 241, 241);
-    cursor: pointer;
-}
-
-.alert-msg{
-    font-size: 14px;
-    color: rgb(173, 173, 173);
-}
-
-
-@media screen and (max-width: 415px){
-    .alert{
-        width: 280px;
-    }
-    .sm-success{
-        border-left: solid 12px #50ba6a;
-    }
-    .sm-error{
-        border-left: solid 12px #bd4b52;
-    }
-    .sm-war{
-        border-left: solid 12px #fdbf14;
-    }
-    .sm-info{
-        border-left: solid 12px #133d58;
-    }
-    .alert-icon-success{
-        display: none;
-    }
-    .alert-icon-error{
-        display: none;
-    }
-    .alert-icon-war{
-        display: none;
-    }
-    .alert-icon-info{
-        display: none;
-    }
-
-}
-/*------------------ THEMES ---------------*/
+/*------------------ THEMES --------------*/
 
 .nexus-theme h2{
     color: mediumspringgreen;
@@ -1914,7 +1745,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 
 .card-default{
     position: relative;
-    /*float: left*/;
+    /*float: left*;*/
     max-width: 230px;
     height: auto;
     background: #ffffff;
@@ -1939,7 +1770,6 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 .card-default .img-default img{
     max-width: 100%;
     border-radius: 4px;
-    ;
 }
 
 .card-default .content-default{
@@ -2038,10 +1868,10 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 .card-blog{
     position: relative;
     width: auto;
-    max-width: 1080px;
+    max-width: 900px;
     height: 350px;
     max-height: auto;
-    /*float: left;*/ 
+    /*float: left;*/
     background:#ffffff;
     display: flex;
     align-items: center;
@@ -2158,7 +1988,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
             height: 250px;
             transform: translateY(-20px);
             position: relative;
-            background: #721a1a;
+          
             border-radius: 10px;
     }
 
@@ -2649,3 +2479,207 @@ input:focus, textarea:focus {
 
 
   
+  /**22222222222222222222222222222222222*/
+  .alert{
+    background: rgb(14, 14, 14);
+    box-shadow: 5px 5px 5px #c2c2c23b;
+    overflow:hidden;
+    margin: 10px;
+    width: 450px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.alert-sub{
+    box-shadow: 5px 5px 5px #c2c2c23b;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/*----------------------ALERT SUCCESS -----------------------*/
+
+                    /*----------------------ALERT  -----------------------*/
+.alert .alert-icon-success{
+    float: left;
+    background: linear-gradient(#5fc49d, #09cc80);
+    width: 80px;
+    height: 100%;
+}
+
+.alert .alert-icon-success .fa-thumbs-up{
+    color: #94dfad;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.alert .alert-text-success{
+    float: left;
+    padding: 15px 15px;
+    color: #09cc80;
+}
+                   /*----------------------ALERT SUB -----------------------*/
+.success{
+    background: linear-gradient(45deg, #2cd0ae, #09cc80);
+}
+
+.error{
+    background: linear-gradient(45deg, #fb333e, #c8048c);
+}
+
+.war{
+    background: linear-gradient(45deg, #fcce00, #ff970f);
+}
+
+.info{
+    background: linear-gradient(45deg, #03639e, #133d58);
+}
+
+
+.alert-sub .emoji-alert{
+    float: left;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 7px 10px;
+}
+.alert-sub-msg{
+    float: left;
+    color: white;
+    font-size: 16px;
+    padding-top: 12px;
+}
+.alert-sub-close{
+    background: none;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    float: right;
+    padding: 10px;
+}
+
+.alert-sub-close:hover{
+    color: rgb(43, 43, 43);
+}
+
+
+/*----------------------ALERT ERROR -----------------------*/
+.alert .alert-icon-error{
+    float: left;
+    background: linear-gradient(#d88183, #bd4b52);
+    width: 80px;
+    height: 100%;
+}
+
+.alert .alert-icon-error .fa-thumbs-down{
+    color: rgb(209, 142, 146);
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.alert .alert-text-error{
+    float: left;
+    padding: 15px 15px;
+    color: #bd4b52;
+}
+/*----------------------ALERT WARNING -----------------------*/
+.alert .alert-icon-war{
+    float: left;
+    background: linear-gradient(#fcd876, #fdbf14);
+    width: 80px;
+    height: 100%;
+}
+
+.alert .alert-icon-war .fa-exclamation-triangle{
+    color: #f8e5af;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 18px;
+}
+
+.alert .alert-text-war{
+    float: left;
+    padding: 15px 15px;
+    color: #fdbf14;
+}
+/*----------------------ALERT INFORMATION -----------------------*/
+.alert .alert-icon-info{
+    float: left;
+    background: linear-gradient(#316686, #133d58);
+    width: 80px;
+    height: 100%;
+}
+
+.alert .alert-icon-info .fa-info-circle{
+    color: #5785a1;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.alert .alert-text-info{
+    float: left;
+    padding: 15px 15px;
+    color: #133d58;
+}
+/*----------------------ALERT GENERAL -----------------------*/
+
+.alert-close{
+    float: right;
+    width: 40px;
+    height: 100%;
+}
+
+.alert-close .fa-times-circle{
+    font-size: 25px;
+    padding-top: 25px;
+    padding-left: 6px;
+    color: rgb(100, 100, 100);
+}
+
+.alert-close:hover{
+    background: rgb(241, 241, 241);
+    cursor: pointer;
+}
+
+.alert-msg{
+    font-size: 14px;
+    color: rgb(173, 173, 173);
+}
+
+
+@media screen and (max-width: 415px){
+    .alert{
+        width: 280px;
+    }
+    .sm-success{
+        border-left: solid 12px #50ba6a;
+    }
+    .sm-error{
+        border-left: solid 12px #bd4b52;
+    }
+    .sm-war{
+        border-left: solid 12px #fdbf14;
+    }
+    .sm-info{
+        border-left: solid 12px #133d58;
+    }
+    .alert-icon-success{
+        display: none;
+    }
+    .alert-icon-error{
+        display: none;
+    }
+    .alert-icon-war{
+        display: none;
+    }
+    .alert-icon-info{
+        display: none;
+    }
+
+}

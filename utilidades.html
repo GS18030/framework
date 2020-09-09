@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus</title>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="styles/prism.css">
+    <link rel="stylesheet" href="styles/documentacion.css">
+    <link rel="stylesheet" href="styles/zeusframework.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+    
+</head>
+<body class="platinum">
+    <header>
+        <nav class="navbar oxford-blue">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <img src="img/p.png" alt="">
+            <h1 class="tittle-font">Zeus</h1>
+            <ul class="items">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--   Menu sidebar ------- aqui va el menu mas palomada  -->
+
+    <div class="btn-sidebar">
+        <span class="fas fa-bars"></span>
+    </div>
+
+    <nav class="sidebar"> 
+        <div class="text">Zeus Documentacion</div>
+        <ul class="sidebar-ul">
+            <li>
+                <a href="#" class="layouts-btn">Layouts
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="layouts-show">
+                    <li><a id="layout" href="layouts.html#contenedores">Contenedores</a></li>
+                    <li><a href="layouts.html#filas">Filas</a></li>
+                    <li><a href="layouts.html#columnas">Columnas</a></li>
+                    <li><a href="layouts.html#myp">Margin, Padding</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="tipog-btn">Tipografía
+                <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="tipog-show">
+                    <li><a href="tipografia.html#fuentes">Fuentes</a></li>
+                    <li><a href="tipografia.html#colores">Colores de texto</a></li>
+                    <li><a href="tipografia.html#tipos">Estilos de texto</a></li>
+                    <li><a href="tipografia.html#tamaños">Tamaños de texto</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" class="utilidades-btn">Utilidades
+                <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="utilidades-show">
+                    <li><a href="utilidades.html#alineacion">Alineacion</a></li>
+                    <li><a href="utilidades.html#alertas">Alertas</a></li>
+                    <li><a href="utilidades.html#bordes">Bordes</a></li>
+                    <li><a href="utilidades.html#backgroud">Backgrounds</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" class="components-btn">Componentes
+                <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="components-show">
+                    <li><a href="componentes.html#botones">Botones</a></li>
+                    <li><a href="componentes.html#tablas">Tablas</a></li>
+                    <li><a href="componentes.html#tablas">Formularios</a></li>
+                    <li><a href="componentes.html#navbar">Navbars</a></li>
+                    <li><a href="componentes.html#cards">Cards</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    
+    <div class="container">      
+
+        <div id="alineacion">
+            <h2 class="txt-center m4-y">Alineacion de Componentes </h2>
+            <p class="m2-y txt-medium">Para alinear contenedores se forma horizontal puede usar la clase <span class="txt-green">mx-auto</span></p>
+            <p class="m2-y txt-medium">Para alinear contenedores se forma vertical puede usar la clase <span class="txt-green">my-auto</span></p>
+            <h3 class="txt-center m4-y">Alineacion de Texto </h3>
+                <div class="mx-auto border w-75 border-persimmon p2 ">
+                    <p class="txt-left ">Texto Alineado a la izquierda.</p>
+                    <p class="txt-center ">Texto Alineado a Centro.</p>
+                    <p class="txt-right ">Texto Alineado a la Derecha.</p>
+                </div>
+
+                <pre>
+                    <code class="language-html line-numbers">                    
+                        &lt;h3 class="txt-center m4-y"&gt;Alineacion de Texto &lt;/h3&gt;
+                        &lt;div class="mx-auto border w-75 border-persimmon p2 "&gt;
+                        &lt;p class="txt-left "&gt;Texto Alineado a la izquierda.&lt;/p&gt;
+                        &lt;p class="txt-center "&gt;Texto Alineado a Centro.&lt;/p&gt;
+                        &lt;p class="txt-right "&gt;Texto Alineado a la Derecha.&lt;/p&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+                <h3 class="txt-center m4-y">Texto Justificado</h3>
+                <p class=" m3-y txt-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laborum magni ad reprehenderit consequuntur adipisci possimus nisi iste, eaque quidem ducimus optio neque corporis animi laudantium dolores quo ea dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis cupiditate neque obcaecati quas alias fugit ex non quisquam, vitae eligendi error distinctio dolor, nostrum voluptatem dignissimos recusandae molestias a!</p>
+
+                <pre>
+                    <code class="language-html line-numbers">                    
+                        &lt;p class=" m3-y txt-justify"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laborum magni ad reprehenderit consequuntur adipisci possimus nisi iste, eaque quidem ducimus optio neque corporis animi laudantium dolores quo ea dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis cupiditate neque obcaecati quas alias fugit ex non quisquam, vitae eligendi error distinctio dolor, nostrum voluptatem dignissimos recusandae molestias a!
+                        &lt;/p&gt;
+
+                    </code>
+                </pre>
+        </div> 
+        
+        <div id="alertas">
+            <h2 class="txt-center m4-y">Alertas </h2>
+            <div class="alert sm-success">
+                <div class="alert-icon-success">
+                    <span class="fas fa-thumbs-up"></span>
+                </div>
+        
+                <div class="alert-text-success">
+                    <span> <b>SIU!</b> Completo</span><br>
+                    <span class="alert-msg">Esta accion se ha completado</span>
+                </div>
+        
+                <div class="alert-close">
+                    <span class="far fa-times-circle"></span>
+                </div>
+            </div>
+        
+            <div class="alert sm-error">
+                <div class="alert-icon-error">
+                    <span class="fas fa-thumbs-down"></span>
+                </div>
+        
+                <div class="alert-text-error">
+                    <span> <b>UY!</b> Error</span><br>
+                    <span class="alert-msg">Esta accion no se completo</span>
+                </div>
+        
+                <div class="alert-close">
+                    <span class="far fa-times-circle"></span>
+                </div>
+            </div>
+        
+            <div class="alert sm-war">
+                <div class="alert-icon-war">
+                    <span class="fas fa-exclamation-triangle"></span>
+                </div>
+        
+                <div class="alert-text-war">
+                    <span> <b>HEY!</b> Alerta</span><br>
+                    <span class="alert-msg">Tenga cuidado</span>
+                </div>
+        
+                <div class="alert-close">
+                    <span class="far fa-times-circle"></span>
+                </div>
+            </div>
+        
+            <div class="alert sm-info">
+                <div class="alert-icon-info">
+                    <span class="fas fa-info-circle"></span>
+                </div>
+        
+                <div class="alert-text-info">
+                    <span> <b>INFO!</b> Información</span><br>
+                    <span class="alert-msg">Aquí va la info</span>
+                </div>
+        
+                <div class="alert-close">
+                    <span class="far fa-times-circle"></span>
+                </div>
+            </div>
+        
+            <div class="alert-sub success">
+                <span class="far fa-smile-wink emoji-alert"></span>
+                <span class="alert-sub-msg">Buen trabajo!</span>
+                <button class="alert-sub-close">Cerrar</button>
+            </div>
+        
+            <div class="alert-sub error">
+                <span class="far fa-angry emoji-alert" ></span>
+                <span class="alert-sub-msg">Mal trabajo!</span>
+                <button class="alert-sub-close">Cerrar</button>
+            </div>
+        
+            <div class="alert-sub war">
+                <span class="far fa-flushed emoji-alert"></span>
+                <span class="alert-sub-msg">Mensaje!</span>
+                <button class="alert-sub-close">Cerrar</button>
+            </div>
+        
+            <div class="alert-sub info">
+                <span class="far fa-grin-beam-sweat emoji-alert" ></span>
+                <span class="alert-sub-msg">Información!</span>
+                <button class="alert-sub-close">Cerrar</button>
+            </div>
+            
+            <pre>
+                <code class="language-html line-numbers">
+                    &lt;div class="alert sm-success"&gt;
+                        &lt;div class="alert-icon-success"&gt;
+                            &lt;span class="fas fa-thumbs-up"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                        &lt;div class="alert-text-success"&gt;
+                            &lt;span&gt; &lt;b&gt;SIU!&lt;/b&gt; Completo&lt;/span&gt;&lt;br&gt;
+                            &lt;span class="alert-msg"&gt;Esta accion se ha completado&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                        &lt;div class="alert-close"&gt;
+                            &lt;span class="far fa-times-circle"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div class="alert sm-error"&gt;
+                        &lt;div class="alert-icon-error"&gt;
+                            &lt;span class="fas fa-thumbs-down"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                        &lt;div class="alert-text-error"&gt;
+                            &lt;span&gt; &lt;b&gt;UY!&lt;/b&gt; Error&lt;/span&gt;&lt;br&gt;
+                            &lt;span class="alert-msg"&gt;Esta accion no se completo&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                        &lt;div class="alert-close"&gt;
+                            &lt;span class="far fa-times-circle"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div class="alert sm-war"&gt;
+                        &lt;div class="alert-icon-war"&gt;
+                            &lt;span class="fas fa-exclamation-triangle"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                        &lt;div class="alert-text-war"&gt;
+                            &lt;span&gt; &lt;b&gt;HEY!&lt;/b&gt; Alerta&lt;/span&gt;&lt;br&gt;
+                            &lt;span class="alert-msg"&gt;Tenga cuidado&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                        &lt;div class="alert-close"&gt;
+                            &lt;span class="far fa-times-circle"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div class="alert sm-info"&gt;
+                        &lt;div class="alert-icon-info"&gt;
+                            &lt;span class="fas fa-info-circle"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                        &lt;div class="alert-text-info"&gt;
+                            &lt;span&gt; &lt;b&gt;INFO!&lt;/b&gt; Información&lt;/span&gt;&lt;br&gt;
+                            &lt;span class="alert-msg"&gt;Aquí va la info&lt;/span&gt;
+                        &lt;/div&gt;
+                                
+                        &lt;div class="alert-close"&gt;
+                            &lt;span class="far fa-times-circle"&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div class="alert-sub success"&gt;
+                        &lt;span class="far fa-smile-wink emoji-alert"&gt;&lt;/span&gt;
+                        &lt;span class="alert-sub-msg"&gt;Buen trabajo!&lt;/span&gt;
+                        &lt;button class="alert-sub-close"&gt;Cerrar&lt;/button&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div class="alert-sub error"&gt;
+                        &lt;span class="far fa-angry emoji-alert" &gt;&lt;/span&gt;
+                        &lt;span class="alert-sub-msg"&gt;Mal trabajo!&lt;/span&gt;
+                        &lt;button class="alert-sub-close"&gt;Cerrar&lt;/button&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div class="alert-sub war"&gt;
+                        &lt;span class="far fa-flushed emoji-alert"&gt;&lt;/span&gt;
+                        &lt;span class="alert-sub-msg"&gt;Mensaje!&lt;/span&gt;
+                        &lt;button class="alert-sub-close"&gt;Cerrar&lt;/button&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div class="alert-sub info"&gt;
+                        &lt;span class="far fa-grin-beam-sweat emoji-alert" &gt;&lt;/span&gt;
+                        &lt;span class="alert-sub-msg"&gt;Información!&lt;/span&gt;
+                        &lt;button class="alert-sub-close"&gt;Cerrar&lt;/button&gt;
+                    &lt;/div&gt;    
+                </code>
+            </pre>
+        </div>
+
+        <div id="bordes">
+       <h2 style="text-align: center">Bordes Normales</h2>
+    <header>
+      <div class="border border-black m3-y">1</div>
+      <div class="border-top border-black m3-y">2</div>
+      <div class="border-bottom border-black m3-y">3</div>
+      <div class="border-left border-black m3-y">4</div>
+      <div class="border-right border-black m3-y">5</div>
+    </header>
+
+    <h1 style="text-align: center">Colores de Bordes</h1>
+    <header>
+      <div class="border border-black m3-y">1</div>
+      <div class="border border-oxfordblue m3-y">2</div>
+      <div class="border border-persimmon m3-y">3</div>
+      <div class="border border-rhythm m3-y">4</div>
+      <div class="border border-platinum m3-y">5</div> 
+    </header>
+
+            <pre>
+                <code class="language-html line-numbers">                    
+                    &lt;header&gt
+                    &lt;div class="border border-black m3-y"&gt1&lt;/div&gt;
+                    &lt;div class="border-top border-black m3-y"&gt;2&lt;/div&gt;
+                    &lt;div class="border-bottom border-black m3-y"&gt;3&lt;/div&gt;
+                    &lt;div class="border-left border-black m3-y"&gt;4&lt;/div&gt;
+                    &lt;div class="border-right border-black m3-y"&gt;5&lt;/div&gt;
+                    &lt;/header&gt;
+
+                    &lt;h1 style="text-align: center"&gt;Colores de Bordes&lt;/h1&gt;
+                    &lt;header&gt;
+                    &lt;div class="border border-black m3-y"&gt;1&lt;/div&gt;
+                    &lt;div class="border border-oxfordblue m3-y"&gt;2&lt;/div&gt;
+                    &lt;div class="border border-persimmon m3-y"&gt;3&lt;/div&gt;
+                    &lt;div class="border border-rhythm m3-y"&gt;4&lt;/div&gt;
+                    &lt;div class="border border-platinum m3-y"&gt;5&lt;/div&gt; 
+
+                    &lt;/header&gt;
+                </code>
+        </pre>            
+
+        <h1 style="text-align: center">Formas de Bordes</h1>
+    <header>
+      <div class=" border border-circle border-persimmon m3-y">1</div>      
+      <div class=" border border-rounded border-persimmon m3-y">1</div>      
+    </header>
+
+            <pre>
+                <code class="language-html line-numbers">
+                    &lt;header&gt;
+                        &lt;div class=" border border-circle border-persimmon m3-y"&gt;1&lt;/div&gt;      
+                        &lt;div class=" border border-rounded border-persimmon m3-y"&gt;1&lt;/div&gt;      
+                    &lt;/header&gt;
+                </code>
+            </pre>
+        </div>
+
+        <div id="backgroud">
+            <h1 class="txt-center m4-y">Background</h1>
+            <table class="tabla tabla-outline-dark tabla-border">                            
+              <!-- Vertical -->
+              <table class="tabla tabla-outline-dark tabla-border">                                  
+                <tbody>
+                  <tr>
+                      <td class="black" colspan="2"></td>
+                      <td class="oxford-blue" colspan="2"></td>
+                      <td class="persimmon" colspan="2"></td>
+                      <td class="rhythm" colspan="2"></td>
+                      <td class="platinum" colspan="2"></td>
+                      <td class="white" colspan="2"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="black" colspan="2"></td>
+                    <td class="oxford-blue" colspan="2"></td>
+                    <td class="persimmon" colspan="2"></td>
+                    <td class="rhythm" colspan="2"></td>
+                    <td class="platinum" colspan="2"></td>
+                    <td class="white" colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td class="black" colspan="2"></td>
+                    <td class="oxford-blue" colspan="2"></td>
+                    <td class="persimmon" colspan="2"></td>
+                    <td class="rhythm" colspan="2"></td>
+                    <td class="platinum" colspan="2"></td>
+                    <td class="white" colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td class="black" colspan="2"></td>
+                    <td class="oxford-blue" colspan="2"></td>
+                    <td class="persimmon" colspan="2"></td>
+                    <td class="rhythm" colspan="2"></td>
+                    <td class="platinum" colspan="2"></td>
+                    <td class="white" colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td class="black" colspan="2"></td>
+                    <td class="oxford-blue" colspan="2"></td>
+                    <td class="persimmon" colspan="2"></td>
+                    <td class="rhythm" colspan="2"></td>
+                    <td class="platinum" colspan="2"></td>
+                    <td class="white" colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td class="black" colspan="2">#000000</td>
+                    <td class="oxford-blue" colspan="2">#14213D</td>
+                    <td class="persimmon" colspan="2">#EA580F</td>
+                    <td class="rhythm" colspan="2">#7E809F</td>
+                    <td class="platinum txt-black" colspan="2">#E5E5E5</td>
+                    <td class="white txt-black" colspan="2">#FFFFF</td>
+                </tr>
+
+                <tr>
+                    <td class="black" colspan="2"><p class="txt-center">Black</p></td>
+                    <td class="oxford-blue" colspan="2"><p class="txt-center">Oxford Blue</p></td>
+                    <td class="persimmon" colspan="2"><p class="txt-center">Persimmon</p></td>
+                    <td class="rhythm" colspan="2"><p class="txt-center">Rhythm</p></td>
+                    <td class="platinum" colspan="2"><p class="txt-center">Platinum</p></td>
+                    <td class="white" colspan="2"><p class="txt-center">White</p></td>
+                </tr>
+
+                <tr>
+                    <td class="black" colspan="2"><p class="txt-center">Black</p></td>
+                    <td class="oxford-blue" colspan="2"><p class="txt-center">Oxford Blue</p></td>
+                    <td class="persimmon" colspan="2"><p class="txt-center">Persimmon</p></td>
+                    <td class="rhythm" colspan="2"><p class="txt-center">Rhythm</p></td>
+                    <td class="platinum" colspan="2"><p class="txt-center">Platinum</p></td>
+                    <td class="white" colspan="2"><p class="txt-center">White</p></td>
+                </tr>
+
+                <tr>
+                    <td class="black" colspan="2"><p class="txt-center">Black</p></td>
+                    <td class="oxford-blue" colspan="2"><p class="txt-center">Oxford Blue</p></td>
+                    <td class="persimmon" colspan="2"><p class="txt-center">Persimmon</p></td>
+                    <td class="rhythm" colspan="2"><p class="txt-center">Rhythm</p></td>
+                    <td class="platinum" colspan="2"><p class="txt-center">Platinum</p></td>
+                    <td class="white" colspan="2"><p class="txt-center">White</p></td>
+                </tr>
+                </tbody>
+              </table>
+
+              <div class="container"></div>
+        </div>
+
+    </div>
+    <script src="js/prism.js"></script>
+    <script src="js/documentacion.js"></script>
+
+    <script>
+        $('.btn-sidebar').click(function(){
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+
+
+        $('.layouts-btn').click(function(){
+           $('nav ul .layouts-show').toggleClass("show"); 
+        
+        });
+        $('.tipog-btn').click(function(){
+           $('nav ul .tipog-show').toggleClass("show"); 
+        });
+        $('.utilidades-btn').click(function(){
+           $('nav ul .utilidades-show').toggleClass("show"); 
+        });
+        $('.components-btn').click(function(){
+           $('nav ul .components-show').toggleClass("show"); 
+        });
+
+        $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+</body>
+</html>
