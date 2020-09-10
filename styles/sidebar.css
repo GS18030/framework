@@ -50,9 +50,9 @@
 }
 
 .sidebar .sidebar-ul li a:hover{
-    color: cyan;
+    color: #3d64b9;
     background: #1e1e1e;
-    border-left-color: cyan;
+    border-left-color: #3d64b9;
 }
 
 .sidebar .sidebar-ul ul{
