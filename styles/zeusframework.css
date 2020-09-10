@@ -188,6 +188,8 @@ html {
     margin: 0 auto;
 }
 
+
+/* Fila */
 .row {
     display: flex;
     flex-flow: row wrap;
@@ -195,8 +197,89 @@ html {
     height: auto;
 }
 
-/* COLUMNAS */
 
+/* POSITIONS, FLOATS, DISPLAY Y PROPIEDADES */
+
+/* POSITIONS */
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+.p-sticky {
+    position: sticky;
+}
+
+/* FLOATS */
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+/* Displays */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-around{
+    justify-content: space-around;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-self-items {
+    align-self: center;
+}
+
+/* Displays */
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;    
+}
+
+/* COLUMNAS */
 .col-1 {
     flex: 0 0 10%!important;   
 }

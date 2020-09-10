@@ -13,8 +13,93 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+
         <div class="container-wrap">
             <div class="w-100 platinum p3-x h-100 mx-auto" style="position: absolute; top:0;right: 0; align-content: center;">
+
+        <div class="container">
+
+            <div id="menuizquierdo" class="w-20 h-100 oxford-blue oculto" style="position: fixed; top:0; left: 0;"> <!--Div seccion izquierda-->
+                
+                <nav class="sidebar">
+                    <div class="text">Zeus Documentacion</div>
+                    <ul class="sidebar-ul">
+                      <li>
+                        <a href="#" class="layouts-btn">Layouts
+                          <span class="fas fa-caret-down first"></span>
+                        </a>
+                        <ul class="layouts-show">
+                          <li><a href="layouts.html#contenedores">Contenedores</a></li>
+                          <li><a href="layouts.html#filas">Filas</a></li>
+                          <li><a href="layouts.html#columnas">Columnas</a></li>
+                          <li><a href="layouts.html#myp">Margin, Padding</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#" class="tipog-btn"
+                          >Tipografía
+                          <span class="fas fa-caret-down second"></span>
+                        </a>
+                        <ul class="tipog-show">
+                          <li><a href="tipografia.html#fuentes">Fuentes</a></li>
+                          <li><a href="tipografia.html#colores">Colores de texto</a></li>
+                          <li><a href="tipografia.html#tipos">Estilos de texto</a></li>
+                          <li><a href="tipografia.html#tamaños">Tamaños de texto</a></li>
+                        </ul>
+                      </li>
+              
+                      <li>
+                        <a href="#" class="utilidades-btn"
+                          >Utilidades
+                          <span class="fas fa-caret-down second"></span>
+                        </a>
+                        <ul class="utilidades-show">
+                          <li><a href="utilidades.html#alineacion">Alineacion</a></li>
+                          <li><a href="utilidades.html#alertas">Alertas</a></li>
+                          <li><a href="utilidades.html#bordes">Bordes</a></li>
+                          <li><a href="utilidades.html#backgroud">Backgrounds</a></li>
+                        </ul>
+                      </li>
+              
+                      <li>
+                        <a href="#" class="components-btn"
+                          >Componentes
+                          <span class="fas fa-caret-down second"></span>
+                        </a>
+                        <ul class="components-show">
+                            <li><a href="componentes.html#botones">Botones</a></li>
+                            <li><a href="componentes.html#tablas">Tablas</a></li>
+                            <li><a href="componentes.html#formularios">Formularios</a></li>
+                            <li><a href="componentes.html#navbar">Navbars</a></li>
+                            <li><a href="componentes.html#cards">Cards</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+            <!--Termina el div de la sección izquierda donde esta el sidebar-->
+            <script>
+                $('.layouts-btn').click(function(){
+                   $('nav ul .layouts-show').toggleClass("show"); 
+                });
+                $('.tipog-btn').click(function(){
+                   $('nav ul .tipog-show').toggleClass("show"); 
+                });
+                $('.utilidades-btn').click(function(){
+                   $('nav ul .utilidades-show').toggleClass("show"); 
+                });
+                $('.components-btn').click(function(){
+                   $('nav ul .components-show').toggleClass("show"); 
+                });
+        
+                $('nav ul li').click(function(){
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+            </script>
+
+            </div>
+
+            <div id="contenido" class="w-100 platinum p3-x m2-x" style="position: absolute; top:0;right: 0; align-content: center;">
+
                 <header>
                     <nav class="navbar oxford-blue mx-auto" >
                         <input type="checkbox" id="check">
