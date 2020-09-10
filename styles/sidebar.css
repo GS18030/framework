@@ -3,21 +3,25 @@
 
 .sidebar{
     position: fixed;
-    width: 265px;
+    width: 20%;
     height: 100%;
     left: 0;
     background: #000000;
     transition: left 0.4s;
+    overflow: auto;
+  
 }
 
 .sidebar .text{
     color: white;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 60px;
+    font-size: 1.8vw;
+    
+    line-height: 50px;
     text-align: center;
     background: #1e1e1e;
-    letter-spacing: 1px;
+    display: block;
+   
+    
   } 
 
 .sidebar .sidebar-ul{
@@ -36,12 +40,13 @@
     position: relative;
     color: #e6e6e6;
     text-decoration: none;
-    font-size-adjust: 18px;
-    font-size: 16px;
-    padding-left: 40px;
-    font-weight: 500;
+    
+    font-size: 1.3vw;
+    padding-left: 10px;
+    
     display: block;
-    width: 100%;
+    overflow: wrap;
+    width: auto;
     border-left: 3px solid transparent;
 }
 
@@ -76,9 +81,10 @@
 }
 
 .sidebar .sidebar-ul ul li a{
-    font-size: 14px; 
+    font-size: 1.1vw;
     color: #e6e6e6;
-    padding-left: 60px;
+    padding-left: 1.5%;
 }
+
 
 

@@ -41,6 +41,11 @@ html {
 .w-75 {
     width: 75%;
 }
+
+.w-80 {
+    width: 80%;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -172,7 +177,7 @@ html {
 
 .container {
     width: 100%;
-    max-width: 1300px;
+    max-width:  1300px;
     height: auto;
     margin: 0 auto;
 }
@@ -2079,10 +2084,12 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
     width: 90%;
     margin: 5px auto;
     border-radius: 40px;
+    
+    top: 0;
 }
 
 .navbar img{
-    left: 8%;
+    left: 9%;
     top: 10px;
     min-height: 50px;
     max-height: 50px;
@@ -2093,7 +2100,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
     color: #ffffff;
     position: absolute;
     margin-top: 15px;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 .navbar .items{
@@ -2151,6 +2158,7 @@ label #cancel
     display: none;
 }
 
+  
 @media (max-width: 944px){
     .navbar img{
         left: 6%;
@@ -2162,6 +2170,13 @@ label #cancel
     .navbar .items li a{
         font-size: 17px;
     }
+    .navbar img{
+        left: 10%;
+        top: 10px;
+        min-height: 50px;
+        max-height: 50px;
+        position: absolute;
+    }
 }
 
 
@@ -2169,6 +2184,7 @@ label #cancel
     .navbar{
         width: 100%;
         border-radius: 0;
+
     }
     
     label #btn{
@@ -2212,7 +2228,13 @@ label #cancel
     #check:checked ~ label #cancel{
         display: block;
     }
-
+    .navbar img{
+        left: 10%;
+        top: 10px;
+        min-height: 50px;
+        max-height: 50px;
+        position: absolute;
+    }
 }
 
 
@@ -2334,26 +2356,6 @@ img{
 }
 
 @media screen and (max-width: 450px){
-    .big-cont{
-        width: 100%;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-    .textos{
-        width: 100%;
-        text-align: center;
-    }
-
-    .textos h1{
-        font-size: 60px;
-    }
-
-    .textos h2{
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 340px){
     .menu{
         width: 100%;
         justify-content: center;
@@ -2696,5 +2698,10 @@ pre{
 .oculto{
 
     display: none;
+}
+
+.overflow-auto{
+
+    overflow: auto;
 }
 

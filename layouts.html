@@ -14,10 +14,10 @@
 </head>
 <body>
     
-        <div class="container">
+        <div class="container-wrap">
 
             <div class="w-20 h-100 oxford-blue" style="position: fixed; top:0; left: 0;"> <!--Div seccion izquierda-->
-                
+             <div class="sidebardiv w-20">
               <nav class="sidebar">
                 <div class="text">Zeus Documentacion</div>
                 <ul class="sidebar-ul">
@@ -73,6 +73,7 @@
                   </li>
                 </ul>
               </nav>
+            </div>
             <!--Termina el div de la sección izquierda donde esta el sidebar-->
             <script>
                 $('.layouts-btn').click(function(){
@@ -96,27 +97,31 @@
             </div>
 
 
-            <div class=" w-75 platinum p3-x m2-x" style="position: absolute; top:0;right: 0; align-content: center;">
-                <header>
-                    <nav class="navbar oxford-blue">
-                        <input type="checkbox" id="check">
-                        <label for="check">
-                            <i class="fas fa-bars" id="btn"></i>
-                            <i class="fas fa-times" id="cancel"></i>
-                        </label>
-                        <img src="img/p.png" alt="">
-                        <h1 class=" tittle-font">Zeus</h1>
-                        <ul class="items">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="layouts.html">Documentation</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Info</a></li>
-                        </ul>
-                    </nav>
-                </header>
+            <div class=" w-80 platinum" style="position: absolute; top:0;right: 0; align-content: center;">
+              <header>
+                <nav class="navbar oxford-blue mx-auto" >
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fas fa-bars" id="btn"></i>
+                        <i class="fas fa-times" id="cancel"></i>
+                    </label>
+                    <img src="img/p.png" alt="">
+                    <h1 class=" tittle-font">Zeus</h1>
+                    <ul class="items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="layouts.html">Documentacion</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Info</a></li>
+                    </ul>
+              
+            </header>
+
 
 
 <!--   A partir de AQUI-->
+
+<div class="p5-x m5-y">
+
 <div id="contenedores">   
   <h2 class="txt-center">Contenedores</h2>
   <br /><br />
@@ -391,14 +396,9 @@
 </div>
   
 
-  
+</div>
 
-
-
-
-
-                
-                            
+                       
             </div>
     </div>
     <script src="js/prism.js"></script>
