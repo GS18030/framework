@@ -92,25 +92,6 @@
                 </li>
               </ul>
             </nav>
-            <!--Termina el div de la sección izquierda donde esta el sidebar-->
-            <script>
-              $(".layouts-btn").click(function () {
-                $("nav ul .layouts-show").toggleClass("show");
-              });
-              $(".tipog-btn").click(function () {
-                $("nav ul .tipog-show").toggleClass("show");
-              });
-              $(".utilidades-btn").click(function () {
-                $("nav ul .utilidades-show").toggleClass("show");
-              });
-              $(".components-btn").click(function () {
-                $("nav ul .components-show").toggleClass("show");
-              });
-
-              $("nav ul li").click(function () {
-                $(this).addClass("active").siblings().removeClass("active");
-              });
-            </script>
           </div>
 
           <div
@@ -152,6 +133,27 @@
         </div>
       </div>
     </div>
+
+    <!--Termina el div de la sección izquierda donde esta el sidebar-->
+    <script>
+      $(".layouts-btn").click(function () {
+        $("nav ul .layouts-show").toggleClass("show");
+      });
+      $(".tipog-btn").click(function () {
+        $("nav ul .tipog-show").toggleClass("show");
+      });
+      $(".utilidades-btn").click(function () {
+        $("nav ul .utilidades-show").toggleClass("show");
+      });
+      $(".components-btn").click(function () {
+        $("nav ul .components-show").toggleClass("show");
+      });
+
+      $("nav ul li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
     <script src="js/prism.js"></script>
     <script src="js/documentacion.js"></script>
   </body>
