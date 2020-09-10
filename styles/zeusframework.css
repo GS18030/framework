@@ -1463,11 +1463,12 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 .tabla {
-    width: 80%;
+    display: block;
+    width: 100%;
     text-align: center;
-    margin: 20px auto;
-    /*font-family: "Quicksand", Helvetica, serif;*/
+    overflow-x: auto;
     border-collapse: collapse;
+    
 }
 
 .tabla td, .tabla th {
@@ -1572,6 +1573,20 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 .tabla-border tbody > tr > td, .tabla-border tbody > tr > th{
     border: 2px solid #f0f0f0;
 }
+@media screen and (max-width: 320px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* CLASE ESTANDAR DE BOTON */
 .button {
@@ -2025,7 +2040,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 .card-face{
     position: relative;
     /*float: left;*/
-    width: 300px;
+    width: 250px;
     height: 400px;
     margin: 30px 30px;
     box-shadow: 8px 8px 48px 1px rgba(0,0,0,0.5);
@@ -2112,7 +2127,8 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
     .card-blog .link-content{    
         padding: 10px 25px;
     }
-
+   
+}
 @media screen and (max-width: 320px){
 
     .card-blog{
@@ -2124,6 +2140,8 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
     .card-blog .img-blog{   
         display: none;
     }
+    
+
 }
 
 /*Aqui el responsive para el card down*/
@@ -2171,7 +2189,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
         opacity: 1;
     }
 }
-}
+
 
 
 /*Navbar*/
@@ -2792,10 +2810,13 @@ input:focus, textarea:focus {
 }
 
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 520px){
     .alert{
-        width: 280px;
+        width: 230px;
+        font-size: 18px;
     }
+
+    
     .sm-success{
         border-left: solid 12px #50ba6a;
     }
@@ -2820,6 +2841,19 @@ input:focus, textarea:focus {
     .alert-icon-info{
         display: none;
     }
+    .alert-sub{
+        box-shadow: 3px 3px 3px #c2c2c23b;
+        width: 240px;
+        height: 40px;
+        border-radius: 10px;
+      
+    }
+    .alert-msg{
+        font-size: 10px;
+        color: rgb(173, 173, 173);
+    }
+    
+    
 
 }
 
