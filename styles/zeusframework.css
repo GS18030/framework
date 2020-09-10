@@ -2281,7 +2281,7 @@ label #cancel
     .navbar{
         width: 100%;
         border-radius: 0;
-        
+        z-index: 3;
     }
     
     label #btn{
@@ -2308,6 +2308,7 @@ label #cancel
 
     .navbar .items .documentacion-show{
         display: block;
+        z-index: 2;
     }
 
     .navbar .items .documentacion-show li {
@@ -2345,6 +2346,15 @@ label #cancel
         min-height: 50px;
         max-height: 50px;
         position: absolute;
+    }
+
+    .div-sidebar{
+        display: none;
+    }
+
+    .div-contenido{
+
+        width: 100%;
     }
 }
 
@@ -2819,4 +2829,9 @@ pre{
 
 .txt-none{
     text-decoration: none;
+}
+
+.zi-1{
+
+    z-index: -1;
 }
