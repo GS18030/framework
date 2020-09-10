@@ -1319,7 +1319,7 @@ h1, h2, h3, h4, h5, h6 {
 .oxford-blue{
 /*background-color: #14213D ;*/
 background: rgb(20,33,61);
-background: linear-gradient(90deg, rgba(20,33,61,1) 0%, rgba(61,100,185,1) 100%);
+background: linear-gradient(90deg, #14213d 0%, #3d64b9 100%);
 }
 .persimmon{
     background: rgb(234,88,15);
@@ -2206,6 +2206,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
     margin-left: 25px;
 }
 
+
 .navbar .items li a{
     position: relative;
     color: white;
@@ -2222,7 +2223,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
     bottom: 0;
     height: 3px;
     width: 100%;
-    background: #7e81a2;
+    background: #3d64b9;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform .2s linear ;
@@ -2231,6 +2232,10 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 .navbar .items li a:hover:before{
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.navbar .items .documentacion-show{
+    display: none;
 }
 
 
@@ -2276,7 +2281,7 @@ label #cancel
     .navbar{
         width: 100%;
         border-radius: 0;
-
+        
     }
     
     label #btn{
@@ -2291,14 +2296,28 @@ label #cancel
 
     .navbar .items{
         position: fixed;
+        overflow: auto;
         width: 100%;
-        height: 100vh;
-        background: rgba(32, 32, 32, 0.493);
+        height: 100%;
+        background: #1e1e1e;
         top: 60px;
         left: -100%;
         text-align: center;
         transition: all .5s ;
     }
+
+    .navbar .items .documentacion-show{
+        display: block;
+    }
+
+    .navbar .items .documentacion-show li {
+        margin: 25px 0;
+    }
+
+    .navbar .items .documentacion-show li a{
+        font-size: 16px;
+    }
+
 
     .navbar .items li {
         display: block;
