@@ -2367,9 +2367,7 @@ label #cancel
 
         width: 100%;
     }
-    .informacion{
-        margin-top: 90px;
-    }
+   
 }
 
 .icono{
@@ -2844,7 +2842,6 @@ pre{
     text-decoration: none;
 }
 
-.zi-1{
-
-    z-index: -1;
+.informacion{
+    margin-top: 90px;
 }
