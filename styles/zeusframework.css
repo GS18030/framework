@@ -2173,7 +2173,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 
 .navbar img{
     left: 9%;
-    top: 10px;
+    top: 15px;
     min-height: 50px;
     max-height: 50px;
     position: absolute;
@@ -2182,7 +2182,7 @@ background: linear-gradient(90deg, rgba(120,122,138,1) 0%, rgba(126,128,159,1) 1
 .navbar h1{
     color: #ffffff;
     position: absolute;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 12%;
 }
 
@@ -2335,6 +2335,7 @@ label #cancel
     justify-content: space-around;
     margin: auto;
     padding: 3px;
+    height: 350px;
 }
 
 img{
@@ -2788,3 +2789,6 @@ pre{
     overflow: auto;
 }
 
+.txt-none{
+    text-decoration: none;
+}
