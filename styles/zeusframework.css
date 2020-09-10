@@ -231,6 +231,14 @@ html {
     display: flex;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.f-nowrap {
+    flex-wrap: nowrap;
+}
+
 .justify-content-center {
     justify-content: center;
 }
