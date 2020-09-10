@@ -231,6 +231,7 @@ html {
     display: flex;
 }
 
+/* Propiedad Wrap de Flex */
 .f-wrap {
     flex-wrap: wrap;
 }
