@@ -1,154 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zeus</title>
-    <link rel="stylesheet" href="styles/zeusframework.css" />
-    <link href="styles/prism.css" rel="stylesheet" />
-    <link href="styles/sidebar.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div
-        class="w-20 h-100 oxford-blue"
-        style="position: fixed; top: 0; left: 0"
-      >
-        <!--Div seccion izquierda-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Zeus - Componentes</title>
+     <link rel="stylesheet" href="styles/zeusframework.css">
+     <link href="styles/prism.css" rel="stylesheet" />
+     <link rel="shortcut icon" href="img/favicon.ico"/>
+     <link href="styles/sidebar.css" rel="stylesheet" />
 
-        <nav class="sidebar">
-          <div class="text">Zeus Documentacion</div>
-          <ul class="sidebar-ul">
-            <li>
-              <a href="#" class="layouts-btn">Layouts
-                <span class="fas fa-caret-down first"></span>
-              </a>
-              <ul class="layouts-show">
-                <li><a href="layouts.html#contenedores">Contenedores</a></li>
-                <li><a href="layouts.html#filas">Filas</a></li>
-                <li><a href="layouts.html#columnas">Columnas</a></li>
-                <li><a href="layouts.html#myp">Margin, Padding</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="tipog-btn"
-                >Tipografía
-                <span class="fas fa-caret-down second"></span>
-              </a>
-              <ul class="tipog-show">
-                <li><a href="tipografia.html#fuentes">Fuentes</a></li>
-                <li><a href="tipografia.html#colores">Colores de texto</a></li>
-                <li><a href="tipografia.html#tipos">Estilos de texto</a></li>
-                <li><a href="tipografia.html#tamaños">Tamaños de texto</a></li>
-              </ul>
-            </li>
-    
-            <li>
-              <a href="#" class="utilidades-btn"
-                >Utilidades
-                <span class="fas fa-caret-down second"></span>
-              </a>
-              <ul class="utilidades-show">
-                <li><a href="utilidades.html#alineacion">Alineacion</a></li>
-                <li><a href="utilidades.html#alertas">Alertas</a></li>
-                <li><a href="utilidades.html#bordes">Bordes</a></li>
-                <li><a href="utilidades.html#backgroud">Backgrounds</a></li>
-              </ul>
-            </li>
-    
-            <li>
-              <a href="#" class="components-btn"
-                >Componentes
-                <span class="fas fa-caret-down second"></span>
-              </a>
-              <ul class="components-show">
-                <li><a href="componentes.html#botones">Botones</a></li>
+     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+ </head>
+ <body>
+     
+         <div class="container-wrap">
+ 
+          <div class="w-20 h-100 oxford-blue div-sidebar" style="position: fixed; top:0; left: 0;"> <!--Div seccion izquierda-->
+                 
+              <nav class="sidebar">
+                <div class="text">Zeus Documentación</div>
+                <ul class="sidebar-ul">
+                  <li>
+                    <a href="#" class="layouts-btn">Layouts
+                      <span class="fas fa-caret-down first"></span>
+                    </a>
+                    <ul class="layouts-show">
+                      <li><a href="layouts.html#contenedores">Contenedores</a></li>
+                      <li><a href="layouts.html#filas">Filas</a></li>
+                      <li><a href="layouts.html#columnas">Columnas</a></li>
+                      <li><a href="layouts.html#myp">Margin, Padding</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="tipog-btn"
+                      >Tipografía
+                      <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="tipog-show">
+                      <li><a href="tipografia.html#fuentes">Fuentes</a></li>
+                      <li><a href="tipografia.html#colores">Colores de texto</a></li>
+                      <li><a href="tipografia.html#tipos">Estilos de texto</a></li>
+                      <li><a href="tipografia.html#tamaños">Tamaños de texto</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#" class="utilidades-btn"
+                      >Utilidades
+                      <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="utilidades-show">
+                      <li><a href="utilidades.html#alineacion">Alineacion</a></li>
+                      <li><a href="utilidades.html#alertas">Alertas</a></li>
+                      <li><a href="utilidades.html#bordes">Bordes</a></li>
+                      <li><a href="utilidades.html#backgroud">Backgrounds</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a href="#" class="components-btn"
+                      >Componentes
+                      <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="components-show">
+                      <li><a href="componentes.html#botones">Botones</a></li>
                 <li><a href="componentes.html#tablas">Tablas</a></li>
                 <li><a href="componentes.html#formularios">Formularios</a></li>
                 <li><a href="componentes.html#navbar">Navbars</a></li>
                 <li><a href="componentes.html#cards">Cards</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <!--Termina el div de la sección izquierda donde esta el sidebar-->
-        <script>
-          $(".layouts-btn").click(function () {
-            $("nav ul .layouts-show").toggleClass("show");
-          });
-          $(".tipog-btn").click(function () {
-            $("nav ul .tipog-show").toggleClass("show");
-          });
-          $(".utilidades-btn").click(function () {
-            $("nav ul .utilidades-show").toggleClass("show");
-          });
-          $(".components-btn").click(function () {
-            $("nav ul .components-show").toggleClass("show");
-          });
-
-          $("nav ul li").click(function () {
-            $(this).addClass("active").siblings().removeClass("active");
-          });
-        </script>
-      </div>
-
-      <div
-        class="w-75 platinum p3-x m2-x"
-        style="position: absolute; top: 0; right: 0; align-content: center"
-      >
-      <header class="">
-        <nav class="navbar oxford-blue mx-auto" >
-            <input type="checkbox" id="check">
-            <label for="check">
-                <i class="fas fa-bars" id="btn"></i>
-                <i class="fas fa-times" id="cancel"></i>
-            </label>
-            <img src="img/p.png" alt="">
-            <h1 class=" tittle-font">Zeus</h1>
-            <ul class="items">
-                <li><a href="index.html">Home</a></li>
-                
-                <li><a href="layouts.html">Documentacion</a></li>
-                <!--Aqui van los submenus para el modo responsivo-->
-                  <ul class="documentacion-show">
-                    <li><a href="layouts.html">Layouts</a></li>
-                    <li><a href="tipografia.html">Tipografia</a></li>
-                    <li><a href="utilidades.html">Utilidades</a></li>
-                    <li><a href="componentes.html">Componentes</a></li>
-                  </ul>    
-                </li>
-
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Info</a></li>
-            </ul>
-      
-    </header>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+             <!--Termina el div de la sección izquierda donde esta el sidebar-->
+             <script>
+                 $('.layouts-btn').click(function(){
+                    $('nav ul .layouts-show').toggleClass("show"); 
+                 });
+                 $('.tipog-btn').click(function(){
+                    $('nav ul .tipog-show').toggleClass("show"); 
+                 });
+                 $('.utilidades-btn').click(function(){
+                    $('nav ul .utilidades-show').toggleClass("show"); 
+                 });
+                 $('.components-btn').click(function(){
+                    $('nav ul .components-show').toggleClass("show"); 
+                 });
+         
+                 $('nav ul li').click(function(){
+                     $(this).addClass("active").siblings().removeClass("active");
+                 });
+             </script>
+ 
+             </div>
+ 
+         <div class=" w-80 platinum div-contenido" style="position: absolute; top:0;right: 0; align-content: center;">
+              <header>
+                <nav class="navbar navbar-top oxford-blue mx-auto" >
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fas fa-bars" id="btn"></i>
+                        <i class="fas fa-times" id="cancel"></i>
+                    </label>
+                    <img src="img/p.png" alt="">
+                    <h1 class=" tittle-font">Zeus</h1>
+                    <ul class="items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="layouts.html">Documentación</a></li>
+                           <!--Aqui van los submenus para el modo responsivo-->
+                          <ul class="documentacion-show">
+                            <li><a href="layouts.html">Layouts</a></li>
+                            <li><a href="tipografia.html">Tipografía</a></li>
+                            <li><a href="utilidades.html">Utilidades</a></li>
+                            <li><a href="componentes.html">Componentes</a></li>
+                          </ul>    
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Info</a></li>
+                    </ul>
+                </nav>
+            </header>
 
 
 
 <!--   A partir de AQUI-->
 
-<div class="p5-x m5-y">
-        <div id="botones">
-          <h1 class="header-font txt-center">Botones</h1>
-          <h2 class="txt-center m3-y">Estilos redondeados</h2>
-          <button class="button btn-normal btn-radius">Boton normal</button>
-          <button class="button oxford-blue btn-radius txt-white">
-            Boton darkblue
-          </button>
-          <button class="button btn-red txt-white btn-radius">Boton red</button>
-          <button class="button btn-yellow btn-radius">Boton Yellow</button>
-          <button class="button btn-orange btn-radius">Boton orange</button>
-          <button class="button btn-green btn-radius">Boton green</button>
-          <button class="button btn-dark btn-radius">Boton dark</button>
-          <button class="button btn-purple btn-radius">Boton purple</button>
-          <button class="button btn-pink btn-radius">Boton Pink</button>
+<div class="p5-x  informacion">
+                 
+      <div id="botones">
+            <h1 class="header-font txt-center">Botones</h1>
+            <h2 class="txt-center m3-y">Estilos redondeados</h2>
+            <button class="button btn-normal btn-radius">Boton normal</button>
+            <button class="button oxford-blue btn-radius txt-white">
+              Boton darkblue
+            </button>
+            <button class="button btn-red txt-white btn-radius">
+              Boton red
+            </button>
+            <button class="button btn-yellow btn-radius">Boton Yellow</button>
+            <button class="button btn-orange btn-radius">Boton orange</button>
+            <button class="button btn-green btn-radius">Boton green</button>
+            <button class="button btn-dark btn-radius">Boton dark</button>
+            <button class="button btn-purple btn-radius">Boton purple</button>
+            <button class="button btn-pink btn-radius">Boton Pink</button>
 
-          <pre>
+            <pre>
         <code class="language-html line-numbers">
           &lt;button class="button btn-normal btn-radius">Boton normal&lt;/button&gt;
           &lt;button class="button oxford-blue btn-radius txt-white">Boton darkblue&lt;/button&gt;
@@ -161,8 +160,8 @@
           &lt;button class="button btn-pink btn-radius">Boton Pink&lt;/button&gt;
          </code> 
         </pre>
-        </div>
-        
+          </div>
+
           <h2 class="txt-center m4-y">Estilos Cuadrados</h2>
           <button class="button btn-normal">Boton normal</button>
           <button class="button btn-darkblue">Botond Darkblue</button>
@@ -187,18 +186,18 @@
               &lt;button class="button btn-pink">Boton Pink&lt;/button&gt;
           </code>
       </pre>
-      <h2 class="txt-center m4-y">Estilos Outline</h2>
-      <button class="button btn-outline-normal">Boton normal</button>
-      <button class="button btn-outline-darkblue">Boton darkblue</button>
-      <button class="button btn-outline-red">Boton red</button>
-      <button class="button btn-outline-yellow">Boton Yellow</button>
-      <button class="button btn-outline-orange">Boton orange</button>
-      <button class="button btn-outline-green">Boton green</button>
-      <button class="button btn-outline-dark">Boton dark</button>
-      <button class="button btn-outline-purple">Boton purple</button>
-      <button class="button btn-outline-pink">Boton Pink</button>
+          <h2 class="txt-center m4-y">Estilos Outline</h2>
+          <button class="button btn-outline-normal">Boton normal</button>
+          <button class="button btn-outline-darkblue">Boton darkblue</button>
+          <button class="button btn-outline-red">Boton red</button>
+          <button class="button btn-outline-yellow">Boton Yellow</button>
+          <button class="button btn-outline-orange">Boton orange</button>
+          <button class="button btn-outline-green">Boton green</button>
+          <button class="button btn-outline-dark">Boton dark</button>
+          <button class="button btn-outline-purple">Boton purple</button>
+          <button class="button btn-outline-pink">Boton Pink</button>
 
-      <pre>
+          <pre>
       <code class="language-html line-numbers">
           &lt;button class="button btn-outline-normal">Boton normal&lt;/button&gt;
           &lt;button class="button btn-outline-darkblue">Boton darkblue&lt;/button&gt;
@@ -211,17 +210,17 @@
           &lt;button class="button btn-outline-pink">Boton Pink&lt;/button&gt;
       </code>
   </pre>
-  <h2 class="txt-center m4-y">Estilos Block, large, small</h2>
-  <button class="button btn-outline-purple btn-total">
-    Boton purple
-  </button>
-  <button class="button btn-outline-pink btn-small">Boton Small</button>
-  <button class="button btn-outline-orange">Boton Normal</button>
-  <button class="button btn-outline-green btn-large">
-    Boton Large
-  </button>
+          <h2 class="txt-center m4-y">Estilos Block, large, small</h2>
+          <button class="button btn-outline-purple btn-total">
+            Boton purple
+          </button>
+          <button class="button btn-outline-pink btn-small">Boton Small</button>
+          <button class="button btn-outline-orange">Boton Normal</button>
+          <button class="button btn-outline-green btn-large">
+            Boton Large
+          </button>
 
-  <pre>
+          <pre>
 <code class="language-html line-numbers">
   &lt;button class="button btn-outline-purple btn-total">Boton purple&lt;/button&gt;
   &lt;button class="button btn-outline-pink btn-small">Boton Small&lt;/button&gt;
@@ -230,69 +229,69 @@
 </code>
 </pre>
 
-<div id="tablas">
-  <h1 class="txt-center">Tablas</h1>
-  <h5 class="font-italic">
-    Documentación y ejemplos para el estilo opcional de tablas
-  </h5>
+          <div id="tablas">
+            <h1 class="txt-center m3-y">Tablas</h1>
+            <!-- <br>
+  <h2><li>Documentación y ejemplos para el estilo opcional de tablas</li></h2> -->
 
-  <p class="m4-y txt-medium">
-    Debido al uso generalizado de tablas en widgets de terceros, como
-    calendarios y selectores de fechas, hemos diseñado nuestras tablas
-    para que sean habilitadas. Simplemente agregue la clase base .table a
-    cualquier table, luego amplíe con estilos personalizados o nuestras
-    diversas clases de modificadores incluidas.
-  </p>
+            <p class="m4-y txt-medium txt-justify">
+              Debido al uso generalizado de tablas en widgets de terceros, como
+              calendarios y selectores de fechas, hemos diseñado nuestras tablas
+              para que sean habilitadas. Simplemente agregue la clase base
+              <span class="txt-red">".tabla"</span> a cualquier table, luego
+              amplíe con estilos personalizados o nuestras diversas clases de
+              modificadores incluidas.
+            </p>
 
-  <table class="tabla tabla-outline-dark">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Lastname</th>
-        <th scope="col">Country</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Alejandro</td>
-        <td>Ibañez</td>
-        <td>Argentina</td>
-      </tr>
+            <table class="tabla tabla-outline-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Lastname</th>
+                  <th scope="col">Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Alejandro</td>
+                  <td>Ibañez</td>
+                  <td>Argentina</td>
+                </tr>
 
-      <tr>
-        <th scope="row">2</th>
-        <td>Iván</td>
-        <td>Romero</td>
-        <td>España</td>
-      </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Iván</td>
+                  <td>Romero</td>
+                  <td>España</td>
+                </tr>
 
-      <tr>
-        <th scope="row">3</th>
-        <td>Adolfo</td>
-        <td>Guzmán</td>
-        <td>Venezuela</td>
-      </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Adolfo</td>
+                  <td>Guzmán</td>
+                  <td>Venezuela</td>
+                </tr>
 
-      <tr>
-        <th scope="row">4</th>
-        <td>Carlos</td>
-        <td>Lemus</td>
-        <td>Peru</td>
-      </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Carlos</td>
+                  <td>Lemus</td>
+                  <td>Peru</td>
+                </tr>
 
-      <tr>
-        <th scope="row">4</th>
-        <td>Marlon</td>
-        <td>Coreas</td>
-        <td>Nueva Zelanda</td>
-      </tr>
-    </tbody>
-  </table>
-  <!--Codigo que se muestra-->
-  <div class="mx-auto">
-    <pre>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Marlon</td>
+                  <td>Coreas</td>
+                  <td>Nueva Zelanda</td>
+                </tr>
+              </tbody>
+            </table>
+            <!--Codigo que se muestra-->
+            <div class="mx-auto">
+              <pre>
         <code class="language-html line-numbers">
             &lt;table class="tabla tabla-outline-dark"&gt;
                 &lt;sthead&gt;                
@@ -342,65 +341,65 @@
             &lt;/table&gt;  
         </code>
     </pre>
-    <!--FIn de codigo que se muestra-->
-  </div>
-  <p>
-    También puede invertir los colores, con texto claro sobre fondos
-    oscuros, con .tabla-dark.
-  </p>
+              <!--FIn de codigo que se muestra-->
+            </div>
+            <p class="m4-y txt-medium">
+              También puede invertir los colores, con texto claro sobre fondos
+              oscuros, con <span class="txt-red">".tabla-dark"</span>.
+            </p>
 
-  <table class="tabla tabla-dark">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Lastname</th>
-        <th scope="col">Country</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Alejandro</td>
-        <td>Ibañez</td>
-        <td>Argentina</td>
-      </tr>
+            <table class="tabla tabla-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Lastname</th>
+                  <th scope="col">Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Alejandro</td>
+                  <td>Ibañez</td>
+                  <td>Argentina</td>
+                </tr>
 
-      <tr>
-        <th scope="row">2</th>
-        <td>Iván</td>
-        <td>Romero</td>
-        <td>España</td>
-      </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Iván</td>
+                  <td>Romero</td>
+                  <td>España</td>
+                </tr>
 
-      <tr>
-        <th scope="row">3</th>
-        <td>Adolfo</td>
-        <td>Guzmán</td>
-        <td>Venezuela</td>
-      </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Adolfo</td>
+                  <td>Guzmán</td>
+                  <td>Venezuela</td>
+                </tr>
 
-      <tr>
-        <th scope="row">4</th>
-        <td>Carlos</td>
-        <td>Lemus</td>
-        <td>Peru</td>
-      </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Carlos</td>
+                  <td>Lemus</td>
+                  <td>Peru</td>
+                </tr>
 
-      <tr>
-        <th scope="row">4</th>
-        <td>Marlon</td>
-        <td>Coreas</td>
-        <td>Nueva Zelanda</td>
-      </tr>
-    </tbody>
-  </table>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Marlon</td>
+                  <td>Coreas</td>
+                  <td>Nueva Zelanda</td>
+                </tr>
+              </tbody>
+            </table>
 
-  <!--Codigo que se muestra-->
-  <pre>
+            <!--Codigo que se muestra-->
+            <pre>
         <code class="language-html line-numbers">
             &lt;table class="tabla tabla-dark"&gt;
-                &lt;sthead&gt;                
+                &lt;thead&gt;                
                     &lt;tr&gt;
                         &lt;th scope="col"&gt;#&lt;/th&gt;
                         &lt;th scope="col"&gt;Name&lt;/th&gt;
@@ -447,373 +446,494 @@
             &lt;/table&gt;  
         </code>
     </pre>
-  <!--FIn de codigo que se muestra-->
+            <!--FIn de codigo que se muestra-->
 
-  <h1>Colores de tablas</h1>
-  <table class="tabla tabla-outline-dark tabla-border">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">ClassName</th>
-        <th scope="col">ColorName</th>
-        <th scope="col">#HEX</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="black">
-        <th scope="row">1</th>
-        <td>.tabla-dark</td>
-        <td>Negro</td>
-        <td>#312e2a</td>
-      </tr>
+            <h1 class="txt-center m5-y">Colores de tablas</h1>
 
-      <tr class="darkblue">
-        <th scope="row">2</th>
-        <td>.tabla-darkblue</td>
-        <td>Azul</td>
-        <td>#0b499b</td>
-      </tr>
+            <p class="txt-medium m4-y txt-justify">
+              Puedes tambien elegir el color de la tabla entre una gran variedad
+              de colores, con nuestras clases de colores para tablas y asi tener
+              un diseño mucho más llamativo y personalizado. Los colores que
+              tenemos disponibles para las tablas, se visualizan en la siguiente
+              tabla:
+            </p>
+            <table class="tabla tabla-outline-dark tabla-border txt-white">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">ClassName</th>
+                  <th scope="col">ColorName</th>
+                  <th scope="col">#HEX</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="black">
+                  <th scope="row">1</th>
+                  <td>.tabla-dark</td>
+                  <td>Negro</td>
+                  <td>#312e2a</td>
+                </tr>
 
-      <tr class="red">
-        <th scope="row">3</th>
-        <td>.tabla-red</td>
-        <td>Rojo</td>
-        <td>#a50a35</td>
-      </tr>
+                <tr class="darkblue">
+                  <th scope="row">2</th>
+                  <td>.tabla-darkblue</td>
+                  <td>Azul</td>
+                  <td>#0b499b</td>
+                </tr>
 
-      <tr class="green">
-        <th scope="row">4</th>
-        <td>.tabla-green</td>
-        <td>Verde</td>
-        <td>#24bb17</td>
-      </tr>
+                <tr class="red">
+                  <th scope="row">3</th>
+                  <td>.tabla-red</td>
+                  <td>Rojo</td>
+                  <td>#a50a35</td>
+                </tr>
 
-      <tr class="yellow">
-        <th scope="row">2</th>
-        <td>.tabla-yellow</td>
-        <td>Amarillo</td>
-        <td>#d3e60d</td>
-      </tr>
+                <tr class="green">
+                  <th scope="row">4</th>
+                  <td>.tabla-green</td>
+                  <td>Verde</td>
+                  <td>#24bb17</td>
+                </tr>
 
-      <tr class="persimmon">
-        <th scope="row">5</th>
-        <td>.tabla-orange</td>
-        <td>Anaranjado</td>
-        <td>#f0740d</td>
-      </tr>
+                <tr class="yellow">
+                  <th scope="row">2</th>
+                  <td>.tabla-yellow</td>
+                  <td>Amarillo</td>
+                  <td>#d3e60d</td>
+                </tr>
 
-      <tr class="purple">
-        <th scope="row">6</th>
-        <td>.tabla-purple</td>
-        <td>Morado</td>
-        <td>#9129af</td>
-      </tr>
+                <tr class="persimmon">
+                  <th scope="row">5</th>
+                  <td>.tabla-orange</td>
+                  <td>Anaranjado</td>
+                  <td>#f0740d</td>
+                </tr>
 
-      <tr class="pink">
-        <th scope="row">7</th>
-        <td>.tabla-pink</td>
-        <td>Rosa</td>
-        <td>#fd01dd</td>
-      </tr>
-    </tbody>
-  </table>
-  <div id="formularios">
-    <h1 class="txt-center">Formularios de contacto</h1>
-    <div class="mx-auto w-75">
-      <form action="">
-        <h1 class="form-title">Example Form</h1>
-        <div class="form-items">
-          <label for="">Input Small</label>
-          <input
-            type="password"
-            class="form-item-block form-item-sm"
-            name=""
-            id=""
-          />
-        </div>
+                <tr class="purple">
+                  <th scope="row">6</th>
+                  <td>.tabla-purple</td>
+                  <td>Morado</td>
+                  <td>#9129af</td>
+                </tr>
 
-        <div class="form-items">
-          <label for="">input normal</label>
-          <input type="password" class="form-item-block" name="" id="" />
-        </div>
+                <tr class="pink">
+                  <th scope="row">7</th>
+                  <td>.tabla-pink</td>
+                  <td>Rosa</td>
+                  <td>#fd01dd</td>
+                </tr>
+              </tbody>
+            </table>
 
-        <div class="form-items">
-          <label for="">Input Large</label>
-          <input
-            type="password"
-            class="form-item-block form-item-lg"
-            name=""
-            id=""
-          />
-        </div>
+            <!-- FORMULARIOS -->
+            <div id="formularios">
+              <h1 class="txt-center m4-y">Formularios de contacto</h1>
+              <p class="m4-y txt-medium txt-justify">
+                En una página web no pueden faltar los formularios, ya que por
+                medio de estos es donde ocurre el intercambio de informacion
+                entre un usuario y un servidor, por lo que se hace necesario
+                contar con formulario de contacto , una pagina web cuenta como
+                mínimo con un formulario de contacto para que los usuarios
+                puedan anexar informacion con la misma, estos formularios pueden
+                tener funcionalidades como registro, login entre otras acciones.
+                Un ejemplo de formulario es el siguiente:
+              </p>
+              <div class="mx-auto w-75 border p4">
+                <form action="">
+                  <h1 class="form-title">Example Form</h1>
+                  <div class="form-items">
+                    <label for="">Input Small</label>
+                    <input
+                      type="password"
+                      class="form-item-block form-item-sm"
+                      name=""
+                      id=""
+                    />
+                  </div>
 
-        <div class="form-items">
-          <label for="">Description</label>
-          <textarea
-            class="form-item-block"
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-      </form>
+                  <div class="form-items">
+                    <label for="">input normal</label>
+                    <input
+                      type="password"
+                      class="form-item-block"
+                      name=""
+                      id=""
+                    />
+                  </div>
 
-      <pre>
-      <code class="language-html line-numbers">
-          &lt;form action=""&gt;
-              &lt;h1 class="form-title"&gt;
-              Example Form
-              &lt;/h1&gt;
-              &lt;div class="form-items"&gt;
-                  &lt;label for=""&gt;Input Small&lt;/label&gt;
-                  &lt;input type="password" class="form-item-block form-item-sm" name="" id=""&gt;
+                  <div class="form-items">
+                    <label for="">Input Large</label>
+                    <input
+                      type="password"
+                      class="form-item-block form-item-lg"
+                      name=""
+                      id=""
+                    />
+                  </div>
+
+                  <div class="form-items">
+                    <label for="">Description</label>
+                    <textarea
+                      class="form-item-block"
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+
+              <pre>
+                <code class="language-html line-numbers">
+                    &lt;form action=""&gt;
+                        &lt;h1 class="form-title"&gt;
+                        Example Form
+                        &lt;/h1&gt;
+                        &lt;div class="form-items"&gt;
+                            &lt;label for=""&gt;Input Small&lt;/label&gt;
+                            &lt;input type="password" class="form-item-block form-item-sm" name="" id=""&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="form-items"&gt;
+                            &lt;label for=""&gt;input normal&lt;/label&gt;
+                            &lt;input type="password" class="form-item-block" name="" id=""&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="form-items"&gt;
+                            &lt;label for=""&gt;Input Large&lt;/label&gt;
+                            &lt;input type="password" class="form-item-block form-item-lg" name="" id=""&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="form-items"&gt;
+                            &lt;label for=""&gt;Description&lt;/label&gt;
+                            &lt;textarea class="form-item-block" name="" id="" cols="30" rows="10"&gt;&lt;/textarea&gt;
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+                </code>
+            </pre>
+
+            <p class="txt-medium m5-y txt-justify">
+              Las clases para los formularios y su respectiva funcionalidad se explican detalladamente
+              en la siguiente tabla: 
+            </p>
+              <table class="tabla tabla-outline-red tabla-border">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>                    
+                    <th scope="col">Classname</th>
+                    <th scope="col" colspan="2">Description</th>
+                  </tr>
+                </thead>
+                <tbody>                          
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><span class="txt-red">".form-items"</span></td>
+                    <td colspan="2">                    
+                      <p class="txt-justify">
+                        Su funcion es dar un espaciado entre un grupo de componentes de formulario como lo pueden ser los imput, botones, etc.                    
+                      </p>                 
+                      <br>   
+                      <p class="txt-justify">
+                        <span class="txt-medium">Uso: </span>
+                        Para su uso recomienda usar esta clase en una etiqueta 
+                        <span class="txt-darkblue">&lt;div&gt;</span>
+                        y luego proceder a insertar los componentes de formulario dentro del mismo.                        
+                      </p>
+                    </td>                                     
+                  </tr>      
+
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><span class="txt-red">".form-item-sm"</span></td>
+                    <td colspan="2">                    
+                      <p class="txt-justify">
+                        Su función es decrementar el tamaño de un input de cualquier tipo.
+                      </p>                 
+                      <br>   
+                      <p class="txt-justify">
+                        <span class="txt-medium">Uso: </span>
+                        Para su uso recomienda usar esta clase en una etiqueta 
+                        <span class="txt-darkblue">&lt;input&gt;</span>
+                        de cualquier tipo para hacerlo pequeño con respecto a su tamaño normal.                        
+                      </p>
+                    </td>                                     
+                  </tr>        
+
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><span class="txt-red">".form-item-lg"</span></td>
+                    <td colspan="2">                    
+                      <p class="txt-justify">
+                        Al contrario de la clase <span class="txt-red">".form-item-sm"</span>
+                        su funcion es incrementar el tamaño de un input de cualquier tipo.
+                      </p>                 
+                      <br>   
+                      <p class="txt-justify">
+                        <span class="txt-medium">Uso: </span>
+                        Para su uso recomienda usar esta clase en una etiqueta 
+                        <span class="txt-darkblue">&lt;input&gt;</span>
+                        de cualquier tipo para hacerlo grande con respecto a su tamaño normal.                        
+                      </p>
+                    </td>                                     
+                  </tr>              
+
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><span class="txt-red">".form-item-block"</span></td>
+                    <td colspan="2">                    
+                      <p class="txt-justify">
+                        Su funcion es hacer que un input o botón tome el 100% de su contenedor
+                        padre.
+                      </p>                 
+                      <br>   
+                      <p class="txt-justify">
+                        <span class="txt-medium">Uso: </span>
+                        Para su uso recomienda usar esta clase en una etiqueta 
+                        <span class="txt-darkblue">&lt;input&gt; ó &lt;button&gt;</span>
+                        para que el componente tome todo el ancho disponible.
+                      </p>
+                    </td>                                     
+                  </tr>                                    
+
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><span class="txt-red">".form-title"</span></td>
+                    <td colspan="2">                    
+                      <p class="txt-justify">
+                        Da un titulo al formulario de contacto
+                      </p>                 
+                      <br>   
+                      <p class="txt-justify">
+                        <span class="txt-medium">Uso: </span>
+                        Para su uso recomienda usar esta clase en cualquier etiqueta 
+                        <span class="txt-darkblue">&lt;h[1-6]&gt;</span>
+                        para crear un titulo para el formulario.
+                      </p>
+                    </td>                                     
+                  </tr>                                                      
+                </tbody>
+              </table>
+            </div>
+            <div id="navbar">
+              <h1 class="txt-center m4-y">Navbar</h1>
+              <nav class="navbar oxford-blue">
+                <input type="checkbox" id="check" />
+                <label for="check">
+                  <i class="fas fa-bars" id="btn"></i>
+                  <i class="fas fa-times" id="cancel"></i>
+                </label>
+                <img src="img/p.png" alt="" />
+                <h1 class="tittle-font">Zeus</h1>
+                <ul class="items">
+                  <li><a>Home</a></li>
+                  <li><a>Documentation</a></li>
+                  <li><a>Contact</a></li>
+                  <li><a>Info</a></li>
+                </ul>
+              </nav>
+
+              <pre>
+                <code class="language-html line-numbers">
+                  &lt;nav class=&quot;navbar oxford-blue&quot;&gt;
+                  &lt;input type=&quot;checkbox&quot; id=&quot;check&quot; /&gt;
+                  &lt;label for=&quot;check&quot;&gt;
+                    &lt;i class=&quot;fas fa-bars&quot; id=&quot;btn&quot;&gt;&lt;/i&gt;
+                    &lt;i class=&quot;fas fa-times&quot; id=&quot;cancel&quot;&gt;&lt;/i&gt;
+                  &lt;/label&gt;
+                  &lt;img src=&quot;img/p.png&quot; alt=&quot;&quot; /&gt;
+                  &lt;h1 class=&quot;tittle-font&quot;&gt;Zeus&lt;/h1&gt;
+                  &lt;ul class=&quot;items&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;layouts.html&quot;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Info&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/nav&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div style="display: block" id="cards">
+              <h2 class="txt-center">Cards</h2>
+              <div class="card-default">
+                <div class="img-default">
+                  <img class="img-card" src="./img/p.png" alt="" />
+                </div>
+                <div class="content-default">
+                  <h2 class="">Card Default</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quis, voluptates dolor, eligendi error cumque possimus enim
+                    optio non.
+                  </p>
+                  <button class="btn-default">Click</button>
+                </div>
+              </div>
+            </div>
+
+            <pre>
+              <code class="language-html line-numbers">
+                &lt;div class=&quot;card-default&quot;&gt;
+                &lt;div class=&quot;img-default&quot;&gt;
+                  &lt;img
+                    class=&quot;img-card&quot;
+                    src=&quot;./img/p.png&quot;
+                    alt=&quot;&quot;
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;content-default&quot;&gt;
+                  &lt;h2 class=&quot;&quot;&gt;Card down&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
+                    voluptates dolor, eligendi error cumque possimus enim optio non.
+                  &lt;/p&gt;
+                  &lt;button class=&quot;btn-default&quot;&gt;Click&lt;/button&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
+              </code>
+            </pre>
 
-              &lt;div class="form-items"&gt;
-                  &lt;label for=""&gt;input normal&lt;/label&gt;
-                  &lt;input type="password" class="form-item-block" name="" id=""&gt;
+            <div class="container-wrap">
+              <div class="card-down">
+                <div class="img-down">
+                  <img class="img-card-down" src="./img/p.png" alt="" />
+                  <h2 class="">Card down</h2>
+                </div>
+                <div class="content-down">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quis, voluptates dolor, eligendi error cumque possimus enim
+                    optio non.
+                  </p>
+                  <button class="btn-down">Click</button>
+                </div>
+              </div>
+            </div>
+
+            <pre>
+              <code class="language-html line-numbers">
+                &lt;div class=&quot;card-down&quot;&gt;
+                &lt;div class=&quot;img-down&quot;&gt;
+                  &lt;img
+                    class=&quot;img-card-down&quot;
+                    src=&quot;./img/p.png&quot;
+                    alt=&quot;&quot;
+                  /&gt;
+                  &lt;h2 class=&quot;&quot;&gt;Card down&lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;content-down&quot;&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
+                    voluptates dolor, eligendi error cumque possimus enim optio non.
+                  &lt;/p&gt;
+                  &lt;button class=&quot;btn-down&quot;&gt;Click&lt;/button&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
+              </code>
+            </pre>
 
-              &lt;div class="form-items"&gt;
-                  &lt;label for=""&gt;Input Large&lt;/label&gt;
-                  &lt;input type="password" class="form-item-block form-item-lg" name="" id=""&gt;
+            <div class="m1-x m4-y">
+              <h2 class="txt-center">Card Blog</h2>
+              <div class="card-blog nexus-theme">
+                <div class="img-blog">
+                  <img src="./img/p.png" alt="" />
+                </div>
+
+                <div class="content-blog">
+                  <span>September 07 2020</span>
+
+                  <h2 class="txt-darkblue">Blog card</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nam vel illo soluta nisi, eaque esse aperiam, explicabo
+                    consequuntur maxime est rem quisquam voluptates corrupti,
+                    odio ea. Illum, in possimus cumque eaque
+                  </p>
+                  <a href="#" class="btn-content">Read more</a>
+                </div>
+              </div>
+            </div>
+            <pre>
+              <code class="language-html line-numbers">
+                &lt;div class=&quot;card-blog nexus-theme&quot;&gt;
+                &lt;div class=&quot;img-blog&quot;&gt;
+                  &lt;img src=&quot;./img/p.png&quot; alt=&quot;&quot; /&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;content-blog&quot;&gt;
+                  &lt;span&gt;September 07 2020&lt;/span&gt;
+
+                  &lt;h2 class=&quot;txt-darkblue&quot;&gt;Blog card&lt;/h2&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vel
+                    illo soluta nisi, eaque esse aperiam, explicabo consequuntur
+                    maxime est rem quisquam voluptates corrupti, odio ea. Illum, in
+                    possimus cumque eaque
+                  &lt;/p&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;btn-content&quot;&gt;Read more&lt;/a&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
+              </code>
+            </pre>
 
-              &lt;div class="form-items"&gt;
-                  &lt;label for=""&gt;Description&lt;/label&gt;
-                  &lt;textarea class="form-item-block" name="" id="" cols="30" rows="10"&gt;&lt;/textarea&gt;
+            <div class="mx-auto w-75 m4-y">
+              <h2 class="txt-center">Card Face</h2>
+              <div class="card-face nexus-theme">
+                <div class="face face1">
+                  <div class="content-face">
+                    <h2>Card face</h2>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Et sapiente nulla cumque, non facere at necessitatibus
+                      totam molestiae porro ab voluptas est accusantium commodi
+                      deleniti beatae voluptatibus perferendis fugiat enim
+                      temporibus voluptate voluptatum rem sunt corrupti. Nostrum
+                      delectus ratione, minus hi.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="face face2">
+                  <h1>01</h1>
+                </div>
+              </div>
+            </div>
+
+            <pre class="m4-y"> 
+              <code class="language-html line-numbers">
+                &lt;div class=&quot;card-face nexus-theme&quot;&gt;
+                &lt;div class=&quot;face face1&quot;&gt;
+                  &lt;div class=&quot;content-face&quot;&gt;
+                    &lt;h2&gt;Card face&lt;/h2&gt;
+                    &lt;p&gt;
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                      sapiente nulla cumque, non facere at necessitatibus totam
+                      molestiae porro ab voluptas est accusantium commodi deleniti
+                      beatae voluptatibus perferendis fugiat enim temporibus voluptate
+                      voluptatum rem sunt corrupti. Nostrum delectus ratione, minus
+                      hi.
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;face face2&quot;&gt;
+                  &lt;h1&gt;01&lt;/h1&gt;
+                &lt;/div&gt;
               &lt;/div&gt;
-          &lt;/form&gt;
-      </code>
-  </pre>
-    </div>
-  </div>
-<div id="navbar">
-<h2 class=" txt-center">Navbar</h2>
-  <nav class="navbar oxford-blue">
-    <input type="checkbox" id="check" />
-    <label for="check">
-      <i class="fas fa-bars" id="btn"></i>
-      <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <img src="img/p.png" alt="" />
-    <h1 class="tittle-font">Zeus</h1>
-    <ul class="items">
-      <li><a >Home</a></li>
-      <li><a >Documentation</a></li>
-      <li><a >Contact</a></li>
-      <li><a >Info</a></li>
-    </ul>
-  </nav>
+              </code>
+          </pre>
 
-  <pre>
-    <code class="language-html line-numbers">
-      &lt;nav class=&quot;navbar oxford-blue&quot;&gt;
-      &lt;input type=&quot;checkbox&quot; id=&quot;check&quot; /&gt;
-      &lt;label for=&quot;check&quot;&gt;
-        &lt;i class=&quot;fas fa-bars&quot; id=&quot;btn&quot;&gt;&lt;/i&gt;
-        &lt;i class=&quot;fas fa-times&quot; id=&quot;cancel&quot;&gt;&lt;/i&gt;
-      &lt;/label&gt;
-      &lt;img src=&quot;img/p.png&quot; alt=&quot;&quot; /&gt;
-      &lt;h1 class=&quot;tittle-font&quot;&gt;Zeus&lt;/h1&gt;
-      &lt;ul class=&quot;items&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;layouts.html&quot;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Info&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
-    </code>
-  </pre>
-</div>
- 
-  <div style="display: block" id="cards">
-    <h2 class=" txt-center">Cards</h2>
-      <div class="card-default">
-        <div class="img-default">
-          <img
-            class="img-card"
-            src="./img/p.png"
-            alt=""
-          />
-        </div>
-        <div class="content-default">
-          <h2 class="">Card Default</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-            voluptates dolor, eligendi error cumque possimus enim optio non.
-          </p>
-          <button class="btn-default">Click</button>
-        </div>
-      </div>
-   
-  </div>
-
-  <pre>
-    <code class="language-html line-numbers">
-      &lt;div class=&quot;card-default&quot;&gt;
-      &lt;div class=&quot;img-default&quot;&gt;
-        &lt;img
-          class=&quot;img-card&quot;
-          src=&quot;./img/p.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;content-default&quot;&gt;
-        &lt;h2 class=&quot;&quot;&gt;Card down&lt;/h2&gt;
-        &lt;p&gt;
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-          voluptates dolor, eligendi error cumque possimus enim optio non.
-        &lt;/p&gt;
-        &lt;button class=&quot;btn-default&quot;&gt;Click&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    </code>
-  </pre>
-
-  <div class="container-wrap">
-    <div class="card-down">
-      <div class="img-down">
-        <img
-          class="img-card-down"
-          src="./img/p.png"
-          alt=""
-        />
-        <h2 class="">Card down</h2>
-      </div>
-      <div class="content-down">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-          voluptates dolor, eligendi error cumque possimus enim optio non.
-        </p>
-        <button class="btn-down">Click</button>
-      </div>
-    </div>
-  </div>
-
- <pre>
-    <code class="language-html line-numbers">
-      &lt;div class=&quot;card-down&quot;&gt;
-      &lt;div class=&quot;img-down&quot;&gt;
-        &lt;img
-          class=&quot;img-card-down&quot;
-          src=&quot;./img/p.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-        &lt;h2 class=&quot;&quot;&gt;Card down&lt;/h2&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;content-down&quot;&gt;
-        &lt;p&gt;
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-          voluptates dolor, eligendi error cumque possimus enim optio non.
-        &lt;/p&gt;
-        &lt;button class=&quot;btn-down&quot;&gt;Click&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    </code>
-  </pre>
-
-  <div class="m1-x m4-y">
-    <h2 class="txt-center">Card Blog</h2>
-    <div class="card-blog nexus-theme">
-      <div class="img-blog">
-        <img src="./img/p.png" alt="" />
-      </div>
-
-      <div class="content-blog">
-        <span>September 07 2020</span>
-
-        <h2 class="txt-darkblue">Blog card</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vel
-          illo soluta nisi, eaque esse aperiam, explicabo consequuntur
-          maxime est rem quisquam voluptates corrupti, odio ea. Illum, in
-          possimus cumque eaque
-        </p>
-        <a href="#" class="btn-content">Read more</a>
-      </div>
-    </div>
-  </div>
- <pre>
-    <code class="language-html line-numbers">
-      &lt;div class=&quot;card-blog nexus-theme&quot;&gt;
-      &lt;div class=&quot;img-blog&quot;&gt;
-        &lt;img src=&quot;./img/p.png&quot; alt=&quot;&quot; /&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&quot;content-blog&quot;&gt;
-        &lt;span&gt;September 07 2020&lt;/span&gt;
-
-        &lt;h2 class=&quot;txt-darkblue&quot;&gt;Blog card&lt;/h2&gt;
-        &lt;p&gt;
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vel
-          illo soluta nisi, eaque esse aperiam, explicabo consequuntur
-          maxime est rem quisquam voluptates corrupti, odio ea. Illum, in
-          possimus cumque eaque
-        &lt;/p&gt;
-        &lt;a href=&quot;#&quot; class=&quot;btn-content&quot;&gt;Read more&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    </code>
-  </pre>
-
-  <div class="mx-auto w-75 m4-y">
-    <h2 class="txt-center">Card Face</h2>
-    <div class="card-face nexus-theme">
-      <div class="face face1">
-        <div class="content-face">
-          <h2>Card face</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
-            sapiente nulla cumque, non facere at necessitatibus totam
-            molestiae porro ab voluptas est accusantium commodi deleniti
-            beatae voluptatibus perferendis fugiat enim temporibus voluptate
-            voluptatum rem sunt corrupti. Nostrum delectus ratione, minus
-            hi.
-          </p>
-        </div>
-      </div>
-
-      <div class="face face2">
-        <h1>Card</h1>
-      </div>
-    </div>
-  </div>
-
-  <pre class="m4-y"> 
-    <code class="language-html line-numbers">
-      &lt;div class=&quot;card-face nexus-theme&quot;&gt;
-      &lt;div class=&quot;face face1&quot;&gt;
-        &lt;div class=&quot;content-face&quot;&gt;
-          &lt;h2&gt;Card face&lt;/h2&gt;
-          &lt;p&gt;
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
-            sapiente nulla cumque, non facere at necessitatibus totam
-            molestiae porro ab voluptas est accusantium commodi deleniti
-            beatae voluptatibus perferendis fugiat enim temporibus voluptate
-            voluptatum rem sunt corrupti. Nostrum delectus ratione, minus
-            hi.
-          &lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&quot;face face2&quot;&gt;
-        &lt;h1&gt;01&lt;/h1&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    </code>
-  </pre>
-  <h2 class="txt-center m4-y">Contenedor Grande</h2>
-  <div class=" black big-cont ">
-    <div class="textos">
-        <h1 class="tittle-font">Titulo</h1>
-        <h4>Subtitulo</h4>
-        <p class=" button btn-outline-orange" id="docu2">Boton</p>
-    </div>
-    <img class=" img-big-cont" src="img/z.png" alt="">
-  </div>
-  <pre class="m4-y"> 
+            <h2 class="txt-center m4-y">Contenedor Grande</h2>
+            <div class="black big-cont">
+              <div class="textos">
+                <h1 class="tittle-font">Titulo</h1>
+                <h4>Subtitulo</h4>
+                <p class="button btn-outline-orange" id="docu2">Boton</p>
+              </div>
+              <img class="img-big-cont" src="img/z.png" alt="" />
+            </div>
+            <pre class="m4-y"> 
     <code class="language-html line-numbers">
       &lt;div class=&quot; black big-cont &quot;&gt;
       &lt;div class=&quot;textos&quot;&gt;
@@ -825,15 +945,18 @@
     &lt;/div&gt;
     </code>
   </pre>
-</div>
-<a class="button btn-outline-orange txt-none  p-sticky" href="#" style="bottom: 0; float: right; ">Subir</a>  
-    <div style="clear: both;">
-    </div>       
-            </div>
-</div>
-        
-    </div>
-
-    <script src="js/prism.js"></script>
-  </body>
-</html>
+                                 
+             </div>  
+                                    
+             </div>
+             <a class="button btn-outline-orange txt-none  p-sticky" href="#" style="bottom: 0; float: right; ">Subir</a>  
+             <div style="clear: both;">
+             </div>       
+                     </div> 
+     </div>
+     <script src="js/prism.js"></script>
+ </body>
+ </html>    
+     
+     
+    
