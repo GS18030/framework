@@ -2279,26 +2279,6 @@ label #cancel
 }
 
 
-@media (max-width: 944px){
-    .navbar img{
-        left: 6%;
-        top: 15px;
-        min-height: 50px;
-        max-height: 50px;
-    }
-
-    .navbar .items li a{
-        font-size: 17px;
-    }
-    .navbar img{
-        left: 10%;
-        top: 10px;
-        min-height: 50px;
-        max-height: 50px;
-        position: absolute;
-    }
-}
-
 
 @media (max-width: 860px){
     .navbar{
