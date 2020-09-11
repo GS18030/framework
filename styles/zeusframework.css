@@ -2385,12 +2385,7 @@ label #cancel
     height: 350px;
 }
 
-img{
-    display: block;
-    object-fit: cover;
-    width: auto;
-    animation: moverIzquierda 1s ease-in;
-}
+
 
 .textos{
     width: 50%;
@@ -2398,7 +2393,7 @@ img{
 }
 
 .textos h1{
-    font-size: 80px;
+    font-size: 70px;
     animation: moverDerecha 1s ease-in;
     margin-top: 50px;
 }
@@ -2467,7 +2462,7 @@ img{
 @media screen and (max-width: 800px){
  
     .textos h1{
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .textos h2{
@@ -2478,15 +2473,15 @@ img{
 @media screen and (max-width: 700px){
   
     .textos h1{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .textos h2{
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 600px){
     .menu{
         width: 100%;
         justify-content: center;
@@ -2503,13 +2498,13 @@ img{
     }
 
     .textos h1{
-        font-size: 20px;
+        font-size: 18px;
     }
     .textos a{
         width: 120px;
     }
     .textos h2{
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
