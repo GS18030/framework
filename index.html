@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zeus</title>
-    <link rel="stylesheet" href="styles/zeusframework.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus - Utilidades</title>
+    <link rel="stylesheet" href="styles/zeusframework.css">
     <link href="styles/index.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/favicon.ico"/>
     <link href="styles/sidebar.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body class=" black">
-    <div class="container-wrap persimmon">
-      <div
-        class="w-100 p3-x  h-100 mx-auto"
-        style="position: absolute; top: 0; right: 0; align-content: center"
-      >
-                 <header class="">
-              <nav class="navbar oxford-blue mx-auto">
-                <input type="checkbox" id="check" />
-                <label for="check">
-                  <i class="fas fa-bars" id="btn"></i>
-                  <i class="fas fa-times" id="cancel"></i>
-                </label>
-                <img src="img/p.png" alt="" />
-                <h1 class="tittle-font">Zeus</h1>
-                <ul class="items">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="layouts.html">Documentacion</a>
-                    
-                    <ul class="documentacion-show">
-                      <li><a href="layouts.html">Layouts</a></li>
-                      <li>
-                        <a href="tipografia.html">Tipografia</a>
-                      </li>
-                      <li>
-                        <a href="utilidades.html">Utilidades</a>
-                      </li>
-                      <li>
-                        <a href="componentes.html">Componentes</a>
-                      </li>
-                    </ul>    
-                  </li>
+</head>
+<body >
+    
+        <div class="container-wrap persimmon">
+            <div class=" w-100 black " style="position: absolute; top:0;right: 0; align-content: center;">
+              <header>
+                <nav class="navbar navbar-top oxford-blue mx-auto ">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fas fa-bars" id="btn"></i>
+                        <i class="fas fa-times" id="cancel"></i>
+                    </label>
+                    <img src="img/p.png" alt="">
+                    <h1 class=" tittle-font">Zeus</h1>
+                    <ul class="items">
+                        <li><a href="index.html">Home</a></li>
 
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Info</a></li>
-                </ul>
-              </nav>
+                        <li><a href="layouts.html">Documentación</a></li>
+                           <!--Aqui van los submenus para el modo responsivo-->
+                          <ul class="documentacion-show">
+                            <li><a href="layouts.html">Layouts</a></li>
+                            <li><a href="tipografia.html">Tipografía</a></li>
+                            <li><a href="utilidades.html">Utilidades</a></li>
+                            <li><a href="componentes.html">Componentes</a></li>
+                          </ul>    
+                        </li>
+
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Info</a></li>
+                    </ul>
+                </nav>
             </header>
 
-            <div class="p5-x m5-y">
-              <div class="black big-cont">
+<!--   A partir de AQUI-->
+<div class=" w-100" style="height: 100px;"></div>
+  <div class="black big-cont p4-x m5-y">
                 <div class="textos">
                   <h1 class="tittle-font">Zeus Framework</h1>
                   <h4>Powerful Design</h4>
@@ -62,26 +56,24 @@
                 </div>
                 <img class="img-big-cont" src="img/z.png" alt="" />
               </div>
-
-              <div class="wave">
-                <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: oxford-blue;"></path></svg></div>
-                <div class="footer-copy-redes">
-                    <div class="copy-redes">
-                        <div class="copy">
-                            &copy; 2020, Todos los derechos reservados - | Zeus Framework |.
-                        </div>
-                        <div class="redes">
-                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
-                        </div>
-                    </div>
-                </div>
+                  
+<div class="wave">
+          <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: oxford-blue;"></path></svg></div>
+          <div class="footer-copy-redes">
+              <div class="copy-redes">
+                  <div class="copy">
+                      &copy; 2020, Todos los derechos reservados - | Zeus Framework |.
+                  </div>
+                  <div class="redes">
+                      <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                      <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                  </div>
               </div>
-         
+          </div>
         </div>
-      </div>
+
     </div>
- 
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-  </body>
+    
+</body>
 </html>
