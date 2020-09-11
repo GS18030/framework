@@ -1623,6 +1623,7 @@ body {
     /*background-color: #ADAABF;*/
     background-color: #E5E5E5;
 }
+
 h1,
 h2,
 h3,
@@ -1637,7 +1638,7 @@ h6 {
 }
 
 /*Backgruod Colors*/
-.body-light{
+.body-light {
     background: #000000;
     background: -webkit-linear-gradient(to right, #000000, #434343);
     background: linear-gradient(to right, #000000, #434343);
@@ -2178,6 +2179,7 @@ h6 {
     background: #24bb17;
     color: white;
 }
+
 /* BOTON OSCURO */
 .btn-outline-dark:hover {
     background: #312e2a;

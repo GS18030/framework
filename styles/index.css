@@ -1,27 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background: #000000;
     background: -webkit-linear-gradient(to right, #000000, #434343);
     background: linear-gradient(to right, #000000, #434343);
 }
 
-header{
+header {
     font-family: 'Open Sans', sans-serif;
     height: auto;
     width: 100%;
 }
 
-.icono{
+.icono {
     display: block;
     animation: moverIzquierda 1s ease-in;
     z-index: 100000000;
 }
 
-.container{
+.container {
     width: 95%;
     max-width: 1200px;
     display: flex;
@@ -31,30 +31,30 @@ header{
     margin-bottom: 0px;
 }
 
-img{
+img {
     display: block;
     object-fit: cover;
     width: auto;
     animation: moverIzquierda 1s ease-in;
 }
 
-.textos{
+.textos {
     width: 50%;
     color: #fff;
 }
 
-.textos h1{
+.textos h1 {
     font-size: 80px;
     animation: moverDerecha 1s ease-in;
     margin-top: 50px;
 }
 
-.textos h4{
+.textos h4 {
     font-size: 30px;
     animation: moverIzquierda 1s ease-in;
 }
 
-.textos a{
+.textos a {
     display: inline-block;
     color: #fff;
     font-weight: 300;
@@ -68,161 +68,169 @@ img{
     animation: moverArriba 1s ease-in;
 }
 
-.textos a:hover{
+.textos a:hover {
     background: #fff;
     color: #7e81a2;
     border: 2px solid #fff;
 }
 
-@keyframes moverIzquierda{
-    0%{
+@keyframes moverIzquierda {
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
 
-@keyframes moverDerecha{
-    0%{
+@keyframes moverDerecha {
+    0% {
         opacity: 0;
         transform: translateX(100px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
 
-@keyframes moverArriba{
-    0%{
+@keyframes moverArriba {
+    0% {
         opacity: 0;
         transform: translateY(100px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
 
-@media screen and (max-width: 1000px){
-    img{
+@media screen and (max-width: 1000px) {
+    img {
         height: 200px;
         width: auto;
     }
 }
 
-@media screen and (max-width: 800px){
-    img{
+@media screen and (max-width: 800px) {
+    img {
         height: 370px;
     }
 
-    textos h1{
+    textos h1 {
         font-size: 70px;
     }
 
-    textos h2{
+    textos h2 {
         font-size: 25px;
     }
 }
 
-@media screen and (max-width: 700px){
-    img{
+@media screen and (max-width: 700px) {
+    img {
         height: 250px;
     }
 
-    textos h1{
+    textos h1 {
         font-size: 40px;
     }
 
-    textos h2{
+    textos h2 {
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 450px){
-    .container{
+@media screen and (max-width: 450px) {
+    .container {
         width: 100%;
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
-    .textos{
+
+    .textos {
         width: 100%;
         text-align: center;
     }
-    img{
+
+    img {
         width: 440px;
         height: auto;
     }
 
-    textos h1{
+    textos h1 {
         font-size: 60px;
     }
 
-    textos h2{
+    textos h2 {
         font-size: 25px;
     }
 }
 
-@media screen and (max-width: 340px){
-    .menu{
+@media screen and (max-width: 340px) {
+    .menu {
         width: 100%;
         justify-content: center;
     }
-    .container{
+
+    .container {
         width: 100%;
         flex-wrap: wrap-reverse;
         justify-content: center;
         text-align: center;
     }
-    .textos{
+
+    .textos {
         width: 100%;
         text-align: center;
     }
-    img{
+
+    img {
         width: 330px;
         height: auto;
     }
 
-    textos h1{
+    textos h1 {
         font-size: 20px;
     }
-    textos a{
+
+    textos a {
         width: 120px;
     }
-    textos h2{
+
+    textos h2 {
         font-size: 15px;
     }
-    .copy-redes .copy{
+
+    .copy-redes .copy {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
     }
-    
-    .copy-redes .redes{
+
+    .copy-redes .redes {
         width: 80%;
         text-align: center;
         margin: auto;
     }
 }
 
-.wave{
+.wave {
     height: 100px;
     width: 100%;
 }
 
 
-.footer-copy-redes{
+.footer-copy-redes {
     widows: 100%;
     background: #000;
 }
 
-.copy-redes{
+.copy-redes {
     width: 98%;
     max-width: 1000px;
     padding: 15px 0px;
@@ -233,19 +241,19 @@ img{
     align-items: center;
 }
 
-.copy-redes .copy{
+.copy-redes .copy {
     width: 70%;
     color: #fff;
 }
 
-.copy-redes .redes{
+.copy-redes .redes {
     width: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.copy-redes .redes a{
+.copy-redes .redes a {
     display: inline-block;
     text-decoration: none;
     padding: 0;

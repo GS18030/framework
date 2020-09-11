@@ -1,9 +1,9 @@
-*{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
-	user-select: none;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    user-select: none;
 }
 
 #contenido2 {
@@ -11,7 +11,7 @@
 }
 
 /*   Estilos para el menu lateral   */
-.btn-sidebar{
+.btn-sidebar {
     position: absolute;
     top: 15px;
     left: 45px;
@@ -21,38 +21,41 @@
     background: #1b1b1b;
     border-radius: 3px;
     cursor: pointer;
-	transition: left 0.4s ease;
+    transition: left 0.4s ease;
 
-  }
-  .btn-sidebar.click{
+}
+
+.btn-sidebar.click {
     left: 260px;
-  }
-  .btn-sidebar span{
+}
+
+.btn-sidebar span {
     color: white;
     font-size: 28px;
     line-height: 45px;
-  }
-  .btn-sidebar.click span:before{
+}
+
+.btn-sidebar.click span:before {
     content: '\f00d';
-  }
+}
 
 /*/-------------------------------------------*/
 
-.sidebar{
+.sidebar {
     position: fixed;
     width: 250px;
     height: 100%;
     left: -250px;
     background: #000000;
     transition: left 0.4s;
-	overflow: auto;
+    overflow: auto;
 }
 
-.sidebar.show{
+.sidebar.show {
     left: 0px;
 }
 
-.sidebar .text{
+.sidebar .text {
     color: white;
     font-size: 18px;
     font-weight: 600;
@@ -60,21 +63,21 @@
     text-align: center;
     background: #1e1e1e;
     letter-spacing: 1px;
-  } 
+}
 
-.sidebar .sidebar-ul{
+.sidebar .sidebar-ul {
     background: #141414;
     height: 100%;
     width: 100%;
     list-style: none;
 }
 
-.sidebar .sidebar-ul li{
+.sidebar .sidebar-ul li {
     line-height: 50px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.sidebar .sidebar-ul li a{
+.sidebar .sidebar-ul li a {
     position: relative;
     text-decoration: none;
     font-size-adjust: 18px;
@@ -86,67 +89,71 @@
     border-left: 3px solid transparent;
 }
 
-.sidebar .sidebar-ul li.active a{
+.sidebar .sidebar-ul li.active a {
     color: cyan;
     background: #1e1e1e;
     border-left-color: cyan;
 }
 
-.sidebar .sidebar-ul ul{
+.sidebar .sidebar-ul ul {
     position: static;
     display: none;
 }
 
 /*Js cambio de clases para mostrar los submenu*/
-.sidebar .sidebar-ul .layouts-show.show{
-    display: block;
-}
-.sidebar .sidebar-ul .tipog-show.show{
-    display: block;
-}
-.sidebar .sidebar-ul .utilidades-show.show{
-    display: block;
-}
-.sidebar .sidebar-ul .components-show.show{
+.sidebar .sidebar-ul .layouts-show.show {
     display: block;
 }
 
-.sidebar .sidebar-ul ul li{
+.sidebar .sidebar-ul .tipog-show.show {
+    display: block;
+}
+
+.sidebar .sidebar-ul .utilidades-show.show {
+    display: block;
+}
+
+.sidebar .sidebar-ul .components-show.show {
+    display: block;
+}
+
+.sidebar .sidebar-ul ul li {
     line-height: 42px;
-    border-bottom: none;  
+    border-bottom: none;
 }
 
-.sidebar .sidebar-ul ul li a{
-    font-size: 14px; 
+.sidebar .sidebar-ul ul li a {
+    font-size: 14px;
     color: #e6e6e6;
     padding-left: 60px;
 }
 
-.sidebar .sidebar-ul li.active ul li a{
+.sidebar .sidebar-ul li.active ul li a {
     color: #e6e6e6;
     background: #141414;
     border-left-color: transparent;
 }
 
-.sidebar .sidebar-ul ul li a:hover{
-    color: cyan!important;
+.sidebar .sidebar-ul ul li a:hover {
+    color: cyan !important;
 }
 
-.sidebar .sidebar-ul li a span{
+.sidebar .sidebar-ul li a span {
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
 }
+
 /*   Fin de estilos para el menu lateral   */
 
 div {
-    margin-top:65px;
+    margin-top: 65px;
     margin-left: 25%;
 }
 
 
-.sidebar .sidebar-ul li a{
+.sidebar .sidebar-ul li a {
 
     color: greenyellow;
 }
