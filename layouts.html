@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus - Layouts</title>
+    <link rel="stylesheet" href="styles/zeusframework.css">
+    <link href="styles/prism.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link href="styles/sidebar.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    
+        <div class="container-wrap">
+
+            <div class="w-20 h-100 oxford-blue div-sidebar" style="position: fixed; top:0; left: 0;"> <!--Div seccion izquierda-->
+             <div class="sidebardiv w-20">
+              <nav class="sidebar">
+                <div class="text txt-white black">Zeus Documentación</div>
+                <ul class="sidebar-ul">
+                  <li>
+                    <a class="layouts-btn">Layouts
+                      <span class="fas fa-caret-down first"></span>
+                    </a>
+                    <ul class="layouts-show">
+                      <li><a href="layouts.html#contenedores">Contenedores</a></li>
+                      <li><a href="layouts.html#filas">Filas</a></li>
+                      <li><a href="layouts.html#columnas">Columnas</a></li>
+                      <li><a href="layouts.html#myp">Margin, Padding</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a  class="tipog-btn"
+                      >Tipografía
+                      <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="tipog-show">
+                      <li><a href="tipografia.html#fuentes">Fuentes</a></li>
+                      <li><a href="tipografia.html#colores">Colores de texto</a></li>
+                      <li><a href="tipografia.html#tipos">Estilos de texto</a></li>
+                      <li><a href="tipografia.html#tamaños">Tamaños de texto</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a class="utilidades-btn"
+                      >Utilidades
+                      <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="utilidades-show">
+                      <li><a href="utilidades.html#alineacion">Alineacion</a></li>
+                      <li><a href="utilidades.html#alertas">Alertas</a></li>
+                      <li><a href="utilidades.html#bordes">Bordes</a></li>
+                      <li><a href="utilidades.html#backgroud">Backgrounds</a></li>
+                    </ul>
+                  </li>
+          
+                  <li>
+                    <a class="components-btn"
+                      >Componentes
+                      <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="components-show">
+                      <li><a href="componentes.html#botones">Botones</a></li>
+                <li><a href="componentes.html#tablas">Tablas</a></li>
+                <li><a href="componentes.html#formularios">Formularios</a></li>
+                <li><a href="componentes.html#navbar">Navbars</a></li>
+                <li><a href="componentes.html#cards">Cards</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!--Termina el div de la sección izquierda donde esta el sidebar-->
+            <script>
+                $('.layouts-btn').click(function(){
+                   $('nav ul .layouts-show').toggleClass("show"); 
+                });
+                $('.tipog-btn').click(function(){
+                   $('nav ul .tipog-show').toggleClass("show"); 
+                });
+                $('.utilidades-btn').click(function(){
+                   $('nav ul .utilidades-show').toggleClass("show"); 
+                });
+                $('.components-btn').click(function(){
+                   $('nav ul .components-show').toggleClass("show"); 
+                });
+        
+                $('nav ul li').click(function(){
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+            </script>
+
+            </div>
+
+
+            <div class=" w-80 platinum div-contenido" style="position: absolute; top:0;right: 0; align-content: center;">
+              <header>
+                <nav class="navbar navbar-top oxford-blue mx-auto ">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fas fa-bars" id="btn"></i>
+                        <i class="fas fa-times" id="cancel"></i>
+                    </label>
+                    <img src="img/p.png" alt="">
+                    <h1 class=" tittle-font">Zeus</h1>
+                    <ul class="items">
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="layouts.html">Documentación</a></li>
+                           <!--Aqui van los submenus para el modo responsivo-->
+                          <ul class="documentacion-show">
+                            <li><a href="layouts.html">Layouts</a></li>
+                            <li><a href="tipografia.html">Tipografía</a></li>
+                            <li><a href="utilidades.html">Utilidades</a></li>
+                            <li><a href="componentes.html">Componentes</a></li>
+                          </ul>    
+                        </li>
+
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Info</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+<!--   A partir de AQUI-->
+
+<div class="p5-x  informacion">
+
+<div id="contenedores">   
+  <h2 class="txt-center">Contenedores</h2>
+  <br /><br />
+
+  <p class="m3-y content-font">
+    Todo maquetacion hecho con el framework debera tener como contendor
+    padre un container.
+  </p>
+
+  <p class="m3-y content-font">
+    Zeus cuenta con dos tipos de contenedores.
+  </p>
+
+  <ul class="m3-y">
+    <li>
+      <b>container</b>, este contendor posee un maximo de 1300px de
+      ancho
+    </li>
+    <li>
+      <b>container-wrap</b>, este contenedro tiene un ancho del 100%.
+    </li>
+  </ul>
+
+
+  <p class="header-font txt-large font-bold">
+    Estructura de un contenedor
+  </p>
+
+  <p class="m4-y content-font">
+    En princio la estructura de un contenedor es muy simple, primero se
+    estable un <b>container</b> como elemento padre que almacenara todos
+    los elementos html, luego dentro de este se coloca un subcontenedor
+    con las clase (puede ser tantos como quiera) y dentro de esto podra
+    establecer las columnas que ocupa los elementos html.
+  </p>
+
+  <p class="m3-y content-font">Como se puede ver a continuacion...</p>
+
+  <!--Codigo que se muestra-->
+  <pre >
+            <code class="language-html line-numbers">
+                &lt;div class="container"&gt;
+                    &lt;div class="row"&gt;
+                        &lt;div class="col-3"&gt;
+                            Contenedor 1
+                        &lt;/div&gt;
+                        &lt;div class="col-4"&gt;
+                            Contenedor 2
+                        &lt;/div&gt;
+                        &lt;div class="col-3"&gt;
+                            Contenedor 3
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+  <!--FIn de codigo que se muestra-->
+
+  <p class="header-font txt-large font-bold m3-y">
+    BreakPoints en Zeus
+  </p>
+
+  <table class="tabla tabla-dark tabla-border">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Minimo</th>
+        <th scope="col">Maximo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">xs</th>
+        <td></td>
+        <td>480px</td>
+      </tr>
+
+      <tr>
+        <th scope="row">sm</th>
+        <td>481px</td>
+        <td>720px</td>
+      </tr>
+
+      <tr>
+        <th scope="row">md</th>
+        <td>721px</td>
+        <td>960px</td>
+      </tr>
+
+      <tr>
+        <th scope="row">lg</th>
+        <td>961px</td>
+        <td>1200px</td>
+      </tr>
+
+      <tr>
+        <th scope="row">xl</th>
+        <td>1201px</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="m4-y content-font">
+    Zeus es un framework hecho para facilitar el responsive, Zeus
+    utiliza los siguientos medias query para ello.
+  </p>
+
+  <!--Codigo que se muestra-->
+  <pre>
+            <code class="language-html line-numbers">
+                @media (max-width: 480px){ 
+                    codigo...
+                }
+
+                @media (min-width: 481px ) and (max-width: 720px) {
+                    codigo...
+                }
+
+                @media (min-width: 721px) and (max-width: 960px){
+                    codigo...
+                }
+
+                @media (min-width: 961px) and (max-width: 1200px){
+                    codigo...
+                }
+
+                @media (min-width: 1201px){
+                    codigo...
+                }
+            </code>
+        </pre>
+  <!--FIn de codigo que se muestra-->
+</div>
+
+
+<div id="filas">
+    <p class="header-font txt-large font-bold">Filas</p>
+    <p class="m4-y content-font">
+      Un container puede tener cuantas filas se necesite, las filas son
+      contenedores importantes ya que permiten definer las columnas que
+      los elementos dentro de estas tendra, lo que mejora el desarrollo
+      UI.
+    </p>
+    <p class="m4-y">Tenemos la clase <span class="txt-green">row</span> para fila.</p>
+</div>
+
+<div id="columnas">
+    <p class="header-font txt-large font-bold">Columnas</p>
+
+    <p class="m4-y content-font">
+      Las columnas es una de las cosas mas importantes en Zeus ya que
+      permiten determinar cuanto espacio ocupara un elemento en una fila y
+      facilita el responsive del sitio web.
+    </p>
+
+    <p class="m2-y content-font">
+      Cabe mencionar que en nuestro framework hay un maximo de 10
+      columnas, es decir un elemento solo podra ocupar un maximo de 10
+      columnas.
+    </p>
+    <p class="m4-y">Tenemos 10 clases son: 
+        <span class="txt-green">
+        <br>col-1
+        <br>col-2
+        <br>col-3
+        <br>col-4
+        <br>col-5
+        <br>col-6
+        <br>col-7
+        <br>col-8
+        <br>col-9
+        <br>col-10
+    </span>
+    </p>
+</div>    
+
+
+<div id="myp">
+
+   
+
+    <p class="header-font txt-large font-bold">Margenes</p>
+
+    <p class="m3-y content-font">
+      Utilizar margenes es algo muy sencillo si se utiliza las clases de
+      Zeus, como lo veremos...
+    </p>
+
+    <!--Codigo que se muestra-->
+    <pre>
+              <code class="language-html line-numbers">
+                  &lt;h1 class="m3"&gt;
+                      Margenes
+                  &lt;/h1&gt;
+              </code>
+          </pre>
+    <!--FIn de codigo que se muestra-->
+
+    <p class="m3-y content-font">
+      Tambien podemos poner margenes automaticos en los ejes x o y
+    </p>
+
+    <!--Codigo que se muestra-->
+    <pre>
+              <code class="language-html line-numbers">
+                  &lt;h1 class="mx-auto"&gt;
+                      Margenes automaticos en el eje x
+                  &lt;/h1&gt;
+              </code>
+          </pre>
+    <!--FIn de codigo que se muestra-->
+
+    <p class="header-font txt-large font-bold">Padding</p>
+
+    <p class="m3-y content-font">
+      Algo importante a observar es que se puede poner paddins en los
+      contenedores y contenidos sin preocuparse a que este afecte el
+      tamaño del elemento, la manera de poner un padding es como se
+      muestra a continuacion.
+    </p>
+
+    <!--Codigo que se muestra-->
+    <pre>
+              <code class="language-html line-numbers">
+                  &lt;h1 class="p3"&gt;
+                      Relleno
+                  &lt;/h1&gt;
+              </code>
+          </pre>
+    <!--FIn de codigo que se muestra-->
+
+    <p class="header-font txt-large font-bold">Clases Extras</p>
+
+    <p class="m3-y content-font">
+      Zeus ademas probee de unas clases extras para facilitar la
+      maquetacion de un sitio web
+    </p>
+    <p class="header-font txt-large font-bold">Anchura y Altura</p>
+
+    <p class="m3-y content-font">
+      Podemos definir el ancho de un elemento dentro los valores 25%,50%,
+      75%, 100%. Como se muestra a continuacion
+    </p>
+
+    <!--Codigo que se muestra-->
+    <pre>
+              <code class="language-html line-numbers">
+                  &lt;div class="w-100"&gt;
+                      Ancho de la caja
+                  &lt;/div&gt;
+              </code>
+          </pre>
+    <!--FIn de codigo que se muestra-->
+
+    <p class="m3-y content-font">
+      Igualmente podemos definir la altura de un elemento dentro los
+      valores 25%,50%, 75%, 100%. Como se muestra a continuacion
+    </p>
+
+    <!--Codigo que se muestra-->
+    <pre>
+              <code class="language-html line-numbers">
+                  &lt;div class="h-100"&gt;
+                      Altura de la caja
+                  &lt;/div&gt;
+              </code>
+          </pre>
+    <!--FIn de codigo que se muestra-->
+
+</div>
+  
+
+</div>
+
+             
+    <a class="button btn-outline-orange txt-none txt-orange p-sticky" href="#" style="bottom: 0; float: right; ">Subir</a>  
+    <div style="clear: both;">
+    </div>       
+            </div>
+    </div>
+    <script src="js/prism.js"></script>
+</body>
+</html>
+     

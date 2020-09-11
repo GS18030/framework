@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 340px){
+    
+    .copy-redes .copy{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .copy-redes .redes{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.wave{
+    height: 100px;
+    width: 100%;
+}
+
+
+.footer-copy-redes{
+    width: 100%;
+    background: #000;
+}
+
+.copy-redes{
+    width: 98%;
+    max-width: 1000px;
+    padding: 15px 0px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.copy-redes .copy{
+    width: 70%;
+    color: #fff;
+}
+
+.copy-redes .redes{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.copy-redes .redes a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
